@@ -31,7 +31,70 @@
 <link href=<c:url value="/resources/css/skins/_all-skins.min.css" />
 	rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<style>
+.access-section {
+	padding-bottom: 5%;
+	padding-top: 5%;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-image: url(<c:url value="/resources/images/main-slide-1.jpg"/>);
+	min-height: 600px;
+}
+
+.access-section .form-box .form-box-inner {
+	background: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	padding: 40px;
+}
+
+access-section .divider {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #999999;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.access-section .divider span {
+	background: #fff;
+	display: inline-block;
+	padding: 10px 0;
+	position: relative;
+	top: 80px;
+	margin-left: -10px;
+}
+
+.access-section .divider:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #e5e5e5;
+	height: 100%;
+	width: 1px;
+}
+
+.access-section .divider span {
+	background: #fff;
+	display: inline-block;
+	padding: 0 10px;
+	position: relative;
+	top: inherit;
+	text-transform: uppercase;
+	color: #999999;
+}
+</style>
+<title>Fund House</title>
 </head>
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
@@ -66,8 +129,8 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
-							<li><a href="#">Investor</a></li>
-							<li><a href="#">Borrower</a></li>
+							<li><a href="signupinvestor">Investor</a></li>
+							<li><a href="signupborrower">Borrower</a></li>
 
 						</ul></li>
 					<li><a href="login">LOGIN</a></li>
@@ -79,12 +142,78 @@
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
-	
-	
-	<footer class="main-footer"> <!-- ROW 1 -->
+		<!-- ******Login Section****** -->
+		<section class="login-section access-section section">
+		<div class="container">
+			<div class="row">
+				<div
+					class="form-box col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
+					<div class="form-box-inner">
+						<h2 class="title text-center">Log in to FundHouse</h2>
+						<div class="row">
+							<div class="form-container col-md-5 col-sm-12 col-xs-12">
+								<form:form class="login-form" action="login"
+									modelAttribute="login" name='loginForm' method="POST">
 
-	<div class="container">
-		<div class="row">
+
+									<div class="form-group email">
+										<label class="sr-only" for="login-email">Email or
+											username</label> <input id="login-email" type="text"
+											class="form-control login-email" name="userName"
+											placeholder="Email" required="required" aria-required="true" />
+									</div>
+									<!--//form-group-->
+									<div class="form-group password">
+										<label class="sr-only" for="login-password">Password</label> <input
+											id="login-password" type="password" name="password"
+											class="form-control login-password" placeholder="Password"
+											required="required" aria-required="true" />
+										<p class="forgot-password">
+											<a href="forgotPassword.html">Forgot password?</a>
+										</p>
+									</div>
+									<!--//form-group-->
+									<input class="btn btn-block btn-cta-primary" name="submit"
+										type="submit" value="Log
+											in" />
+									<div class="remember checkbox">
+										<label> <input type="checkbox" name="remember-me">Remember
+											me
+										</label>
+									</div>
+									<input type="hidden" name="" value="" />
+									<!--//checkbox-->
+								</form:form>
+							</div>
+							<!--//form-container-->
+							<div
+								class="social-btns col-md-5 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-sm-offset-0">
+								<div class="divider">
+									<span>Or</span>
+								</div>
+								<p class="lead">Don't have a FundHouse account?</p>
+								<ul class="list-unstyled social-login">
+									<li><a class="btn btn-cta-secondary" href="signupinvestor"><i
+											class="fa"></i>Sign up as Investor</a></li>
+									<li><a class="btn btn-cta-secondary" href="signupborrower"><i
+											class="fa"></i>Sign up as Borrower</a></li>
+								</ul>
+							</div>
+							<!--//social-btns-->
+						</div>
+						<!--//row-->
+					</div>
+					<!--//form-box-inner-->
+				</div>
+				<!--//form-box-->
+			</div>
+			<!--//row-->
+		</div>
+		<!--//container--> </section>
+		<footer class="main-footer"> <!-- ROW 1 -->
+
+		<div class="container">
+
 			<div class="row">
 				<div class="col-xs-6 col-sm-6 col-md-2 column">
 					<h4>Information</h4>
@@ -122,21 +251,42 @@
 						<li><a href="#">Terms &amp; Conditions</a></li>
 					</ul>
 				</div>
-				<div class="col-xs-6 col-md-4 column">
-					<h4>Follow Use</h4>
-					<ul class="nav">
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Google+</a></li>
-						<li><a href="#">Pinterest</a></li>
 
-					</ul>
+			</div>
+			<div class="row ">
+				<div class="footer-botom">
+					<div class="col-lg-10 col-md-4 column">
+						<div class="text-center">
+							<small>FUNDHOUSE A Trade Name of TRUEALLIANCE CONSULTANCY
+								MANAGEMENT INDIA LIMITED</small>
+						</div>
+						<div class="text-center">
+							<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 column">
+
+						<ul class="social list-inline">
+							<li><a target="_blank" href="https://twitter.com/lendboxin"><i
+									class="fa fa-twitter"></i></a></li>
+							<li><a target="_blank"
+								href="https://www.facebook.com/pages/Lendbox/641410082662094"><i
+									class="fa fa-facebook"></i></a></li>
+							<li><a target="_blank"
+								href="https://plus.google.com/u/0/b/104085647914169330781/"><i
+									class="fa fa-google-plus"></i></a></li>
+							<li><a target="_blank"
+								href="https://instagram.com/lendbox.in"><i
+									class="fa fa-instagram"></i></a></li>
+							<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
+						</ul>
+
+					</div>
 				</div>
 			</div>
-
 		</div>
-	</footer>
-	
+		</footer>
+	</div>
 	<!-- Js File 		  -->
 
 
