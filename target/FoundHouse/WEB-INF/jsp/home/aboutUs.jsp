@@ -36,7 +36,7 @@
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper">
-
+		<!-- Navi barr -->
 		<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
@@ -46,7 +46,7 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -79,11 +79,112 @@
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+		<!-- END -->
+		<!--  Box -->
+		<div class="handle-bg container about-handle-bg "></div>
+		<section class="setion-how-it-works section-bg">
 
 
+		<div class="title container text-center">Our story,our value</div>
+		<div class="setion-how-it-works-inner container">
+			<div class="row">
+				<!-- Section 1 -->
+				<div class="col">
+					<div class="box box-bg">
+						<!-- /.box-header -->
+						<div class="box-body body-padding">
+							<p>fundhouse is India's premier peer-to-peer e-lending
+								platform. We are creating a conducive environment for borrowers
+								and investors</p>
+							<p>Unlike banks and financial institutions fundhouse cuts down
+								the interest rates for borrowers and increases investor's yields
+								by eliminating mediators like commercial banks, depository
+								institutions etc.</p>
+							<p>fundhouse aims to revolutionize the personal loans market in
+								India by creating a one-stop shop for all borrowers with varied
+								profiles and needs who can have access to both retail and
+								institutional investors with varying risk appetites.</p>
+							<p>We are a team of young and energetic professionals who
+								have come together from diverse backgrounds such as investment
+								banking, consulting, technology, e-commerce and startup
+								management to disrupt the personal credit sector in India</p>
+							<p>fundhouse is designed to cut the middle man and the costs
+								associated with the middle man and help investors and borrowers
+								interact directly with each other without any hidden charges in
+								the most transparent, convenient and efficient manner</p>
+						</div>
+						<!-- /.box-body -->
+					</div>
+				</div>
+			</div>
+			<!-- End Sections -->
+			<!-- Call Out -->
+			<div class="callout callout-info1 ">
+				<p>In recent times, fundhouse has helped a lot of individuals to
+					realize their dreams by serving their capital needs with complete
+					integrity.</p>
+			</div>
+			<!-- END -->
+			<center>
+				<h1>Meet the team</h1>
+				<div class="pad col-xs-4">
+					<img class="img-responsive"
+						src="/FoundHouse/resources/images/thirdimg.jpg" />
+				</div>
+				<div class="pad col-xs-4">
+					<img class="img-responsive"
+						src="/FoundHouse/resources/images/thirdimg.jpg" />
+				</div>
+				<div class="pad col-xs-4">
+					<img class="img-responsive"
+						src="/FoundHouse/resources/images/thirdimg.jpg" />
+				</div>
+				<div class="pad col-xs-4">
+					<img class="img-responsive"
+						src="/FoundHouse/resources/images/thirdimg.jpg" />
+				</div>
+				<div class="pad col-xs-4">
+					<img class="img-responsive"
+						src="/FoundHouse/resources/images/thirdimg.jpg" />
+				</div>
+				<div class=" col-xs-4">
+					<label type="text" class="form-control"
+						style="padding-bottom: 310px; border-top-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-left-width: 0px;">
+				</div>
+				<div class="row">
+					<h1>Get in touch to know more</h1>
+					<h3>Want to know more about fundhouse? We also love your
+						feedback. Let us know what you think or if you have any questions.
+					</h3>
+					<div class="row">
+						<table>
+							<tr>
+								<td><button type="button" class="btn btn-info"><i class="fa fa-envelope-o"></i></button></td>
+								<td><a href="mailto:support@fundhouse.in">support@fundhouse.in</a></td>
+							</tr>
+							<tr>
+								<td><button type="button" class="btn btn-info"><i class="fa fa-twitter"></i></button></td>
+								<td><a href="https://twitter.com/fundhousein" target="_blank">@fundhousein</a></td>
+							</tr>
+							<tr>
+							<td><button type="button" class="btn btn-info"><i class="fa fa-phone"></i></button></td>
+							<td><a href="tel:01126254235">011-26254235</a></td>
+							</tr>
+							<!-- <li><i class="fa fa-whatsapp"></i><a href="tel:9811534578">9811534578</a></li> -->
+							<tr>
+							<td><button type="button" class="btn btn-info"><i class="fa fa fa-map-marker" style="color:red;"></i></button></td>
+							<td>fundhouse HQ <br>South Extension II <br> New Delhi<br>India</td>
+								</tr>
+						</table>
+					</div>
+
+				</div>
+			</center>
+		</div>
+		</section>
 
 
-
+		<!-- Footer -->
 		<footer class="main-footer"> <!-- ROW 1 -->
 
 		<div class="container">
@@ -135,48 +236,51 @@
 								MANAGEMENT INDIA LIMITED</small>
 						</div>
 						<div class="text-center">
-							<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
+							<small>Copyright Â© 2027. All Rights Reserved Fundhouse</small>
 						</div>
 					</div>
-					<div class="col-lg-2 col-md-4 column">
+				</div>
+				<div class="col-lg-2 col-md-4 column">
 
-						<ul class="social list-inline">
-							<li><a target="_blank" href="https://twitter.com/lendboxin"><i
-									class="fa fa-twitter"></i>
-									</h6></li>
-							<li><a target="_blank"
-								href="https://www.facebook.com/pages/Lendbox/641410082662094"><i
-									class="fa fa-facebook"></i></a></li>
-							<li><a target="_blank"
-								href="https://plus.google.com/u/0/b/104085647914169330781/"><i
-									class="fa fa-google-plus"></i></a></li>
-							<li><a target="_blank"
-								href="https://instagram.com/lendbox.in"><i
-									class="fa fa-instagram"></i></a></li>
-							<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
-						</ul>
+					<ul class="social list-inline">
+						<li><a target="_blank" href="https://twitter.com/fundhousein"><i
+								class="fa fa-twitter"></i>
+								</h6></li>
+						<li><a target="_blank"
+							href="https://www.facebook.com/pages/FundHouse/641410082662094"><i
+								class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank"
+							href="https://plus.google.com/u/0/b/104085647914169330781/"><i
+								class="fa fa-google-plus"></i></a></li>
+						<li><a target="_blank"
+							href="https://instagram.com/fundhouse.in"><i
+								class="fa fa-instagram"></i></a></li>
+						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
+					</ul>
 
-					</div>
 				</div>
 			</div>
+		</div>
 		</footer>
+		<!-- END -->
 
-		<!-- Js File 		  -->
+	</div>
+	<!-- Js File 		  -->
 
 
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<script src=<c:url value="/resources/js/app.min.js"/>
-			type="text/javascript"></script>
-		<!-- SlimScroll -->
-		<script
-			src=<c:url value="/resources/plugins/slimScroll/jquery.slimscroll.min.js"/>
-			type="text/javascript"></script>
-		<script src=<c:url value="/resources/js/demo.js"/>
-			type="text/javascript"></script>
+	<script src=<c:url value="/resources/js/app.min.js"/>
+		type="text/javascript"></script>
+	<!-- SlimScroll -->
+	<script
+		src=<c:url value="/resources/plugins/slimScroll/jquery.slimscroll.min.js"/>
+		type="text/javascript"></script>
+	<script src=<c:url value="/resources/js/demo.js"/>
+		type="text/javascript"></script>
 </body>
 </html>

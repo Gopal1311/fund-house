@@ -47,7 +47,7 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -397,12 +397,26 @@
 								</div>
 								<!-- /.tab-pane -->
 
-								<a class="btn btn-block btn-primary btn-sm"
-									href="signupborrower" style="font-size: 14px;">Register as
-									Borrowers</a>
+								
 							</div>
 							<!-- /.tab-content -->
+							
 						</div>
+						<div class="row">
+						<div class="pad col-xs-4">
+									<label type="text" class="form-control "
+										style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
+								</div>
+								<div class="col-xs-4">
+						<a class="btn btn-block btn-primary btn-sm"
+									href="signupborrower" style="font-size: 18px;">Register as
+									Borrowers</a>
+									</div>
+									<div class="pad col-xs-4">
+									<label type="text" class="form-control "
+										style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
+								</div>
+								</div>
 					</div>
 				</div>
 			</div>

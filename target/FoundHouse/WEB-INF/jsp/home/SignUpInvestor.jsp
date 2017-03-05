@@ -152,7 +152,7 @@ div pad {
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -227,7 +227,7 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-6">
 									<input type="text" class="form-control "
-										placeholder="Amount to invest">
+										placeholder="Amount to invest" name="amt">
 								</div>
 								<div class="pad col-xs-6">
 									<label type="text" class="form-control "
@@ -238,7 +238,8 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-6">
 									<input type="text" class="form-control "
-										placeholder="Expected interest rate%">
+										placeholder="Expected interest rate(%)" name="rate">
+									
 								</div>
 								<div class="pad col-xs-6">
 									<label type="text" class="form-control "
@@ -247,30 +248,29 @@ div pad {
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-2">
-									<input type="text" class="form-control " placeholder="title">
+									<input type="text" class="form-control " placeholder="title" name="title">
 								</div>
 								<div class="pad col-xs-5">
 									<input type="text" class="form-control "
-										placeholder="First name">
+										placeholder="First name" name="fname">
 								</div>
 								<div class="pad col-xs-5">
 									<input type="text" class="form-control "
-										placeholder="last name">
+										placeholder="last name" name="lname">
 
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-6">
-									<input type="text" class="form-control " placeholder="E-mail">
+									<input type="text" class="form-control " name="email" placeholder="E-mail">
 								</div>
 								<div class="pad col-xs-6">
-									<input type="text" class="form-control " placeholder="Password">
-
+									<input type="text" class="form-control " name="pwd" placeholder="Password">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-6">
-									<input type="text" class="form-control " placeholder="Mobile">
+									<input type="text" class="form-control " placeholder="Mobile" name="mobile">
 								</div>
 								<div class="pad col-xs-6">
 									<label type="text" class="form-control "
@@ -289,7 +289,7 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-4">
 									<input type="text" class="form-control "
-										placeholder="Date of birth">
+										placeholder="Date of birth" name="dob">
 								</div>
 								<div class="pad col-xs-8">
 									<label type="text" class="form-control "
@@ -299,9 +299,9 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-4">
 									<input type="text" class="form-control "
-										placeholder="Fathers name">
+										placeholder="Fathers name" name="fathername">
 								</div>
-									<div class="pad col-xs-8">
+								<div class="pad col-xs-8">
 									<label type="text" class="form-control "
 										style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
 								</div>
@@ -309,44 +309,44 @@ div pad {
 							<div class="form-group">
 								<h4>RESIDENCE ADDRESS</h4>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 1">
+									<input type="text" class="form-control " placeholder="street 1" name="addressline1">
 								</div>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 2">
+									<input type="text" class="form-control " placeholder="street 2" name="addressline2">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="State">
+									<input type="text" class="form-control " placeholder="State" name="state">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="City">
+									<input type="text" class="form-control " placeholder="City" name="city">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="Pincode">
+									<input type="text" class="form-control " placeholder="Pincode" name="pincode">
 								</div>
 							</div>
 							<div class="form-group">
 								<h4>PERMENT RESIDENCE ADDRESS</h4>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 1">
+									<input type="text" class="form-control " placeholder="street 1" name="paddress1">
 								</div>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 2">
+									<input type="text" class="form-control " placeholder="street 2" name="paddress2">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="State">
+									<input type="text" class="form-control " placeholder="State" name="state2">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="City">
+									<input type="text" class="form-control " placeholder="City" name="city2">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="Pincode">
+									<input type="text" class="form-control " placeholder="Pincode" name="pincode2">
 								</div>
 							</div>
-														<div class="f1-buttons">
+							<div class="f1-buttons">
 								<button type="button" class="btn btn-previous">Previous</button>
 								<button type="button" class="btn btn-next">Next</button>
 							</div>
