@@ -28,11 +28,6 @@
 	rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Fund House</title>
-<style type="text/css">
-div pad {
-	padding-top: 20px;
-}
-</style>
 </head>
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
@@ -54,7 +49,7 @@ div pad {
 					<i class="fa fa-bars"></i>
 				</button>
 			</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="${pageContext.request.contextPath}">HOME</a></li>
@@ -78,6 +73,7 @@ div pad {
 		</nav> </header>
 		<!-- End Nav -->
 		<!-- Blogs -->
+		<section class="artical-section">
 		<div class="container content">
 			<div class="row">
 				<div class="pad col-sm-6 col-md-4 col-xs-4">
@@ -259,6 +255,7 @@ div pad {
 			</div>
 			<!-- End Blogs -->
 		</div>
+		</section>
 		<footer class="main-footer"> <!-- ROW 1 -->
 		<div class="container">
 			<div class="row">

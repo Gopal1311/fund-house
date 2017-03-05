@@ -2157,6 +2157,15 @@
 		background-color: white;
 		border-top-color: white;
 	}
+	
+	
+	.artical-section
+	{
+		background-color: white;
+		padding-top:30px ;
+		padding-bottom:70px;
+	}
+	
 	artical .artical-box {
 		background-color: white;;
 		border: 1px solid #eeeeee;

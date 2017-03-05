@@ -224,8 +224,8 @@
 											Indian bank account</li>
 										<li><i class="fa fa-star"></i>You must have a valid PAN
 											card</li>
-										<li><i class="fa fa-star"></i>You must abide by fundhouse's
-											Terms & Conditions</li>
+										<li><i class="fa fa-star"></i>You must abide by
+											fundhouse's Terms & Conditions</li>
 										<li><i class="fa fa-star"></i>You must adhere to
 											Investor's code of conduct</li>
 										<li><i class="fa fa-star"></i>You must register your
@@ -301,8 +301,8 @@
 												documentation<!-- as a proof of identity, address, DOB,
 											signature, contact, income. --></li>
 											<li><i class="fa fa-star"></i>Account activation:
-												fundhouse verifies the information provided and activates the
-												account</li>
+												fundhouse verifies the information provided and activates
+												the account</li>
 											<li><i class="fa fa-star"></i>Browsing and selecting
 												borrowers: Active investors can browse through the list of
 												borrowers on the platform with varied risk profiles</li>
@@ -317,7 +317,8 @@
 											<li><i class="fa fa-star"></i>After loan disbursement:
 												fundhouse intervenes for any delayed monthly payments and
 												investors even have an option to engage an RBI registered
-												recovery agency through fundhouse in case of major defaulters</li>
+												recovery agency through fundhouse in case of major
+												defaulters</li>
 										</ul>
 										<p>We may put limitations on your account at any time if
 											we believe it is in order to comply with our legal
@@ -360,10 +361,10 @@
 												<li><i class="fa fa-star"></i>You are permitted to
 													download and print content from this platform solely for
 													your own personal use to the extent required to use the
-													services provided on this website. fundhouse supplied content
-													must not be copied or reproduced, modified, redistributed,
-													used or otherwise dealt with for any other reason without
-													our express written consent.</li>
+													services provided on this website. fundhouse supplied
+													content must not be copied or reproduced, modified,
+													redistributed, used or otherwise dealt with for any other
+													reason without our express written consent.</li>
 												<li><i class="fa fa-star"></i>We are not responsible
 													for content downloaded or posted by Investors on the
 													platform.</li>
@@ -393,13 +394,28 @@
 										</div>
 										<!--//table-responsive-->
 									</div>
-									
+
 								</div>
 								<!-- /.tab-pane -->
-								
-							<a class="btn btn-block btn-primary btn-sm" href="signupinvestor" style="font-size: 14px;">Register as Investor</a>
+
+
 							</div>
 							<!-- /.tab-content -->
+						</div>
+						<div class="row">
+							<div class="pad col-xs-4">
+								<label type="text" class="form-control "
+									style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
+							</div>
+							<div class="col-xs-4">
+								<a class="btn btn-block btn-primary btn-sm"
+									href="signupinvestor" style="font-size: 18px;">Register as
+									Investor</a>
+							</div>
+							<div class="pad col-xs-4">
+								<label type="text" class="form-control "
+									style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -425,12 +441,12 @@
 										<i class="fa fa-plus"></i>
 									</button>
 								</div>
-								<!-- /.box-tools --> 
+								<!-- /.box-tools -->
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>fundhouse is an e-lending platform for peer-to-peer lending
-									where willing investors can transact with pre-verified
+								<p>fundhouse is an e-lending platform for peer-to-peer
+									lending where willing investors can transact with pre-verified
 									creditworthy borrowers on short to medium term unsecured
 									personal loans.</p>
 							</div>
@@ -442,8 +458,8 @@
 						<!-- Box1 -->
 						<div class="box box-bg-investors-investors collapsed-box">
 							<div class="box-header with-border">
-								<h3 class="box-title">How can I become a member on fundhouse
-									?</h3>
+								<h3 class="box-title">How can I become a member on
+									fundhouse ?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -480,8 +496,8 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>If you have Invested in people through fundhouse and due to
-									some unforeseen circumstances we have to close our doors for
+								<p>If you have Invested in people through fundhouse and due
+									to some unforeseen circumstances we have to close our doors for
 									business, all loan agreements would still be valid as they have
 									been signed between the respective investors and borrowers.</p>
 							</div>
@@ -530,8 +546,8 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>Yes, you can invest or borrow through fundhouse regardless
-									of the region you reside in within India.</p>
+								<p>Yes, you can invest or borrow through fundhouse
+									regardless of the region you reside in within India.</p>
 							</div>
 							<!-- /.box-body -->
 						</div>
@@ -539,7 +555,8 @@
 					</div>
 					<div class="col">
 						<!-- Box1 -->
-						<div class="box box-bg-investors-investors-investors collapsed-box">
+						<div
+							class="box box-bg-investors-investors-investors collapsed-box">
 							<div class="box-header with-border">
 								<h3 class="box-title">Is my personal and financial
 									information secure on fundhouse?</h3>
