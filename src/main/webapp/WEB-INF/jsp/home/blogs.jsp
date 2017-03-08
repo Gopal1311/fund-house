@@ -61,8 +61,8 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
-							<li><a href="signupinvestor">Investor</a></li>
-							<li><a href="signupborrower">Borrower</a></li>
+							<li><a href="signUpInvestor">Investor</a></li>
+							<li><a href="signUpBorrower">Borrower</a></li>
 						</ul></li>
 					<li><a href="login">LOGIN</a></li>
 				</ul>

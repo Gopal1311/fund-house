@@ -47,7 +47,7 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
+				<a href="../../index2.html" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -67,9 +67,8 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
-							<li><a href="signupinvestor">Investor</a></li>
-							<li><a href="signupborrower">Borrower</a></li>
-
+							<li><a href="signUpInvestor">Investor</a></li>
+							<li><a href="signUpBorrower">Borrower</a></li>
 						</ul></li>
 					<li><a href="login">LOGIN</a></li>
 
@@ -119,9 +118,9 @@
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active " id="tab_1">
-									<p>fundhouse uses a transparent, convenient and efficient
+									<p>Lendbox uses a transparent, convenient and efficient
 										system to serve its users</p>
-									<p>fundhouse is a Peer-to-Peer lending platform, which gets
+									<p>Lendbox is a Peer-to-Peer lending platform, which gets
 										creditworthy borrowers and willing investors together to
 										transact on short to medium term personal unsecured loans.</p>
 									<p>All borrowers go through a thorough financial, personal,
@@ -129,7 +128,7 @@
 										through the use of sophisticated technology and machine
 										learning algorithms working in tandem with experienced
 										professionals.</p>
-									<p>fundhouse's investors have access to a wide range of
+									<p>Lendbox's investors have access to a wide range of
 										borrowers with varied risk profiles giving the investor an
 										option to create a diverse portfolio.</p>
 									<p>Financial Institutions provide limited products for
@@ -139,7 +138,7 @@
 										period of time. Finally, equity markets are highly volatile
 										and require a significant holding capacity and risk appetite
 										and even then returns are not guaranteed.</p>
-									<p>fundhouse fills this gap by offering a new fixed income
+									<p>Lendbox fills this gap by offering a new fixed income
 										asset class which is safe and secure and offers ROIs of as
 										high as 36%.</p>
 									<p>You may have been refused a loan from high street banks
@@ -147,7 +146,7 @@
 										are more than capable of repaying your loans. This may be due
 										to an unconventional profile or something that banks might
 										consider a "bad credit" profile.</p>
-									<p>fundhouse takes a different approach compared to that of
+									<p>Lendbox takes a different approach compared to that of
 										banks and looks at several more data points to create a more
 										holistic credit profile and does not rely entirely on credit
 										bureau scores and conventional KYC information.</p>
@@ -155,7 +154,7 @@
 										bad credit profiles in getting personal loans at desired
 										interest rates. Sign up as an investor and explore the
 										tailor-made proposals that suit to your needs.</p>
-									<p>Some of the key advantages of lending through fundhouse
+									<p>Some of the key advantages of lending through Lendbox
 										are :</p>
 
 									<ul class="list-unstyled">
@@ -177,7 +176,7 @@
 										<li><i class="fa fa-star"></i>Recommended score and
 											interest rate along with approved amount</li>
 									</ul>
-									<p>fundhouse follows an out of the box approach to credit
+									<p>Lendbox follows an out of the box approach to credit
 										assessment through a perfect blend of big data analytics and
 										highly qualified professionals. Some of the factors we
 										thoroughly assess are:</p>
@@ -197,14 +196,14 @@
 										<li><i class="fa fa-star"></i>Online spending behavior
 											and many other non-traditional data points</li>
 									</ul>
-									<p>In total, fundhouse reviews over 1000 data points to
+									<p>In total, Lendbox reviews over 1000 data points to
 										ensure that our system accurately profiles a borrowers and our
 										investors are provided with an accurate credit assessment to
 										assist in their decision making process.</p>
 								</div>
 								<!-- /.tab-pane -->
 								<div class="tab-pane" id="tab_2">
-									<p>fundhouse is a platform for people with unconventional
+									<p>Lendbox is a platform for people with unconventional
 										approach to Investing, which ultimately pays off with higher
 										returns on an investorâ€™s idle cash. This is more like
 										investing in people rather than lending with much less risk
@@ -224,12 +223,12 @@
 											Indian bank account</li>
 										<li><i class="fa fa-star"></i>You must have a valid PAN
 											card</li>
-										<li><i class="fa fa-star"></i>You must abide by
-											fundhouse's Terms & Conditions</li>
+										<li><i class="fa fa-star"></i>You must abide by Lendbox's
+											Terms & Conditions</li>
 										<li><i class="fa fa-star"></i>You must adhere to
 											Investor's code of conduct</li>
 										<li><i class="fa fa-star"></i>You must register your
-											details on the website https://www.fundhouse.in</li>
+											details on the website https://www.Lendbox.in</li>
 									</ul>
 									<div class="table-responsive">
 										<table class="table table-striped">
@@ -286,8 +285,8 @@
 								<!-- /.tab-pane -->
 								<div class="tab-pane" id="tab_3">
 									<div class="desc text-left">
-										<p>Investing at fundhouse is very similar to stock market
-											investments but with a much much less risk. fundhouse is all
+										<p>Investing at Lendbox is very similar to stock market
+											investments but with a much much less risk. Lendbox is all
 											about investing in people through a transparent, convenient
 											and efficient process.</p>
 
@@ -296,29 +295,28 @@
 
 										<ul class="list-unstyled">
 											<li><i class="fa fa-star"></i>Registration : Register
-												your personal and professional details on fundhouse. We do
+												your personal and professional details on Lendbox. We do
 												basic checks on the information provided and ask for some
 												documentation<!-- as a proof of identity, address, DOB,
 											signature, contact, income. --></li>
 											<li><i class="fa fa-star"></i>Account activation:
-												fundhouse verifies the information provided and activates
-												the account</li>
+												Lendbox verifies the information provided and activates the
+												account</li>
 											<li><i class="fa fa-star"></i>Browsing and selecting
 												borrowers: Active investors can browse through the list of
 												borrowers on the platform with varied risk profiles</li>
 											<li><i class="fa fa-star"></i>Deal close and agreement
 												signing: Investors can negotiate and close deals with
-												individual borrowers and fundhouse facilitates the agreement
+												individual borrowers and Lendbox facilitates the agreement
 												signing</li>
 											<li><i class="fa fa-star"></i>EMI payments: All
 												borrowers are encouraged to issue standing instructions in
 												favour of their investors to make monthly payments easy and
 												paperfree</li>
 											<li><i class="fa fa-star"></i>After loan disbursement:
-												fundhouse intervenes for any delayed monthly payments and
+												Lendbox intervenes for any delayed monthly payments and
 												investors even have an option to engage an RBI registered
-												recovery agency through fundhouse in case of major
-												defaulters</li>
+												recovery agency through Lendbox in case of major defaulters</li>
 										</ul>
 										<p>We may put limitations on your account at any time if
 											we believe it is in order to comply with our legal
@@ -329,9 +327,9 @@
 								</div>
 								<div class="tab-pane" id="tab_4">
 									<div class="desc text-left">
-										<p>The returns you earn by investing through fundhouse
+										<p>The returns you earn by investing through Lendbox
 											depend on your risk appetite. So, you decide the risk profile
-											of borrowers you want to invest in and fundhouse will
+											of borrowers you want to invest in and Lendbox will
 											facilitate the process afterwords.</p>
 										<p>Non-Payment of EMI: In case the borrowers do not
 											transfer the EMI by the due date, additional penal interest
@@ -341,7 +339,7 @@
 											Borrowers will be liable to pay the Investor.</p>
 										<!-- <p>Fees: We charge a listing fee of 1% of the Invested
 										amount or Rs. 1500 whichever is higher.</p>
-									<p>fundhouse is currently offering a festive discount and
+									<p>Lendbox is currently offering a festive discount and
 										waiving off the registration fee for both Investors and
 										Borrowers</p> -->
 										<!--//table-responsive-->
@@ -361,10 +359,10 @@
 												<li><i class="fa fa-star"></i>You are permitted to
 													download and print content from this platform solely for
 													your own personal use to the extent required to use the
-													services provided on this website. fundhouse supplied
-													content must not be copied or reproduced, modified,
-													redistributed, used or otherwise dealt with for any other
-													reason without our express written consent.</li>
+													services provided on this website. Lendbox supplied content
+													must not be copied or reproduced, modified, redistributed,
+													used or otherwise dealt with for any other reason without
+													our express written consent.</li>
 												<li><i class="fa fa-star"></i>We are not responsible
 													for content downloaded or posted by Investors on the
 													platform.</li>
@@ -373,10 +371,10 @@
 													not infringe the rights of any anyone else or restrict or
 													inhibit anyone else's use and enjoyment of the platform.</li>
 												<li><i class="fa fa-star"></i>You agree not to use the
-													fundhouse website or any information accessible on or
+													Lendbox website or any information accessible on or
 													obtained from it for the purpose of canvassing or
 													soliciting any person or enticing any person away from
-													fundhouse.</li>
+													Lendbox.</li>
 												<li><i class="fa fa-star"></i>You guarantee that you
 													have taken all reasonable precautions to ensure that any
 													information you upload or otherwise submit to the website
@@ -394,28 +392,10 @@
 										</div>
 										<!--//table-responsive-->
 									</div>
-
 								</div>
 								<!-- /.tab-pane -->
-
-
 							</div>
 							<!-- /.tab-content -->
-						</div>
-						<div class="row">
-							<div class="pad col-xs-4">
-								<label type="text" class="form-control "
-									style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
-							</div>
-							<div class="col-xs-4">
-								<a class="btn btn-block btn-primary btn-sm"
-									href="signupinvestor" style="font-size: 18px;">Register as
-									Investor</a>
-							</div>
-							<div class="pad col-xs-4">
-								<label type="text" class="form-control "
-									style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
-							</div>
 						</div>
 					</div>
 				</div>
@@ -433,7 +413,7 @@
 						<!-- Box1 -->
 						<div class="box box-bg-investors-investors collapsed-box">
 							<div class="box-header with-border">
-								<h3 class="box-title">What is fundhouse?</h3>
+								<h3 class="box-title">What is Lendbox?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -441,12 +421,12 @@
 										<i class="fa fa-plus"></i>
 									</button>
 								</div>
-								<!-- /.box-tools -->
+								<!-- /.box-tools --> 
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>fundhouse is an e-lending platform for peer-to-peer
-									lending where willing investors can transact with pre-verified
+								<p>Lendbox is an e-lending platform for peer-to-peer lending
+									where willing investors can transact with pre-verified
 									creditworthy borrowers on short to medium term unsecured
 									personal loans.</p>
 							</div>
@@ -458,8 +438,8 @@
 						<!-- Box1 -->
 						<div class="box box-bg-investors-investors collapsed-box">
 							<div class="box-header with-border">
-								<h3 class="box-title">How can I become a member on
-									fundhouse ?</h3>
+								<h3 class="box-title">How can I become a member on Lendbox
+									?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -484,7 +464,7 @@
 						<!-- Box1 -->
 						<div class="box box-bg-investors-investors collapsed-box">
 							<div class="box-header with-border">
-								<h3 class="box-title">What if fundhouse closes its doors ?</h3>
+								<h3 class="box-title">What if Lendbox closes its doors ?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -496,8 +476,8 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>If you have Invested in people through fundhouse and due
-									to some unforeseen circumstances we have to close our doors for
+								<p>If you have Invested in people through Lendbox and due to
+									some unforeseen circumstances we have to close our doors for
 									business, all loan agreements would still be valid as they have
 									been signed between the respective investors and borrowers.</p>
 							</div>
@@ -511,7 +491,7 @@
 						<!-- Box1 -->
 						<div class="box box-bg-investors-investors collapsed-box">
 							<div class="box-header with-border">
-								<h3 class="box-title">Where is fundhouse located ?</h3>
+								<h3 class="box-title">Where is Lendbox located ?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -523,7 +503,7 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>fundhouse's headquarters are in Delhi NCR.</p>
+								<p>Lendbox's headquarters are in Delhi NCR.</p>
 							</div>
 							<!-- /.box-body -->
 						</div>
@@ -534,7 +514,7 @@
 						<!-- Box1 -->
 						<div class="box box-bg-investors-investors collapsed-box">
 							<div class="box-header with-border">
-								<h3 class="box-title">Is fundhouse a Pan-India operation ?</h3>
+								<h3 class="box-title">Is Lendbox a Pan-India operation ?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -546,8 +526,8 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>Yes, you can invest or borrow through fundhouse
-									regardless of the region you reside in within India.</p>
+								<p>Yes, you can invest or borrow through Lendbox regardless
+									of the region you reside in within India.</p>
 							</div>
 							<!-- /.box-body -->
 						</div>
@@ -555,11 +535,10 @@
 					</div>
 					<div class="col">
 						<!-- Box1 -->
-						<div
-							class="box box-bg-investors-investors-investors collapsed-box">
+						<div class="box box-bg-investors-investors-investors collapsed-box">
 							<div class="box-header with-border">
 								<h3 class="box-title">Is my personal and financial
-									information secure on fundhouse?</h3>
+									information secure on Lendbox?</h3>
 
 								<div class="box-tools pull-right">
 									<button type="button" class="btn btn-box-tool"
@@ -571,7 +550,7 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>Yes, fundhouse has taken extensive measures including
+								<p>Yes, Lendbox has taken extensive measures including
 									incorporating 128 bit SSL encryption to ensure that your
 									personal and financial information is safe with us. Information
 									will only be shared with any third party after the user's prior
@@ -656,17 +635,17 @@
 				<div class="col-lg-2 col-md-4 column">
 
 					<ul class="social list-inline">
-						<li><a target="_blank" href="https://twitter.com/fundhousein"><i
+						<li><a target="_blank" href="https://twitter.com/lendboxin"><i
 								class="fa fa-twitter"></i>
 								</h6></li>
 						<li><a target="_blank"
-							href="https://www.facebook.com/pages/fundhouse/641410082662094"><i
+							href="https://www.facebook.com/pages/Lendbox/641410082662094"><i
 								class="fa fa-facebook"></i></a></li>
 						<li><a target="_blank"
 							href="https://plus.google.com/u/0/b/104085647914169330781/"><i
 								class="fa fa-google-plus"></i></a></li>
 						<li><a target="_blank"
-							href="https://instagram.com/fundhouse.in"><i
+							href="https://instagram.com/lendbox.in"><i
 								class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>

@@ -11,10 +11,17 @@ public class InvestorsController {
 	@RequestMapping(value="/investors") 
 	public String init()
 	{
-		System.out.println("InvestorsController_METHOD-->Call Init ");	
+		System.out.println("investors-->InvestorsController-->Init() ");	
 		return "home/investors";
 	}
 	
+	
+	@RequestMapping(value="/signUpInvestor") 
+	public String signUp()
+	{
+		System.out.println("signUpInvestor-->InvestorsController-->signUp() ");	
+		return "investor/signUpInvestor";
+	}
 	
 }
 

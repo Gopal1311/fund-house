@@ -227,7 +227,7 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-6">
 									<input type="text" class="form-control "
-										placeholder="Amount to invest" name="amt">
+										placeholder="Amount to invest">
 								</div>
 								<div class="pad col-xs-6">
 									<label type="text" class="form-control "
@@ -238,8 +238,7 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-6">
 									<input type="text" class="form-control "
-										placeholder="Expected interest rate(%)" name="rate">
-									
+										placeholder="Expected interest rate%">
 								</div>
 								<div class="pad col-xs-6">
 									<label type="text" class="form-control "
@@ -248,29 +247,30 @@ div pad {
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-2">
-									<input type="text" class="form-control " placeholder="title" name="title">
+									<input type="text" class="form-control " placeholder="title">
 								</div>
 								<div class="pad col-xs-5">
 									<input type="text" class="form-control "
-										placeholder="First name" name="fname">
+										placeholder="First name">
 								</div>
 								<div class="pad col-xs-5">
 									<input type="text" class="form-control "
-										placeholder="last name" name="lname">
+										placeholder="last name">
 
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-6">
-									<input type="text" class="form-control " name="email" placeholder="E-mail">
+									<input type="text" class="form-control " placeholder="E-mail">
 								</div>
 								<div class="pad col-xs-6">
-									<input type="text" class="form-control " name="pwd" placeholder="Password">
+									<input type="text" class="form-control " placeholder="Password">
+
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-6">
-									<input type="text" class="form-control " placeholder="Mobile" name="mobile">
+									<input type="text" class="form-control " placeholder="Mobile">
 								</div>
 								<div class="pad col-xs-6">
 									<label type="text" class="form-control "
@@ -289,7 +289,7 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-4">
 									<input type="text" class="form-control "
-										placeholder="Date of birth" name="dob">
+										placeholder="Date of birth">
 								</div>
 								<div class="pad col-xs-8">
 									<label type="text" class="form-control "
@@ -299,9 +299,9 @@ div pad {
 							<div class="form-group">
 								<div class="pad col-xs-4">
 									<input type="text" class="form-control "
-										placeholder="Fathers name" name="fathername">
+										placeholder="Fathers name">
 								</div>
-								<div class="pad col-xs-8">
+									<div class="pad col-xs-8">
 									<label type="text" class="form-control "
 										style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
 								</div>
@@ -309,44 +309,44 @@ div pad {
 							<div class="form-group">
 								<h4>RESIDENCE ADDRESS</h4>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 1" name="addressline1">
+									<input type="text" class="form-control " placeholder="street 1">
 								</div>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 2" name="addressline2">
+									<input type="text" class="form-control " placeholder="street 2">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="State" name="state">
+									<input type="text" class="form-control " placeholder="State">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="City" name="city">
+									<input type="text" class="form-control " placeholder="City">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="Pincode" name="pincode">
+									<input type="text" class="form-control " placeholder="Pincode">
 								</div>
 							</div>
 							<div class="form-group">
 								<h4>PERMENT RESIDENCE ADDRESS</h4>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 1" name="paddress1">
+									<input type="text" class="form-control " placeholder="street 1">
 								</div>
 								<div class="pad col-xs-12">
-									<input type="text" class="form-control " placeholder="street 2" name="paddress2">
+									<input type="text" class="form-control " placeholder="street 2">
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="State" name="state2">
+									<input type="text" class="form-control " placeholder="State">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="City" name="city2">
+									<input type="text" class="form-control " placeholder="City">
 								</div>
 								<div class="pad col-xs-4">
-									<input type="text" class="form-control " placeholder="Pincode" name="pincode2">
+									<input type="text" class="form-control " placeholder="Pincode">
 								</div>
 							</div>
-							<div class="f1-buttons">
+														<div class="f1-buttons">
 								<button type="button" class="btn btn-previous">Previous</button>
 								<button type="button" class="btn btn-next">Next</button>
 							</div>
