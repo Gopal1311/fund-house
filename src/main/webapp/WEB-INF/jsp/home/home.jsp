@@ -26,11 +26,6 @@
 
 <link href=<c:url value="/resources/css/AdminLTE.min.css"/>
 	rel="stylesheet" type="text/css" />
-<link href=<c:url value="/resources/css/Slider/component.css"/>
-	rel="stylesheet" type="text/css" />
-<script src=<c:url value="/resources/js/Slider/modernizr.custom.js"/>
-	type="text/javascript"></script>
-
 <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
 <link href=<c:url value="/resources/css/skins/_all-skins.min.css" />
@@ -51,14 +46,6 @@
 .example-modal .modal {
 	background: transparent !important;
 }
-
-.slider-body {
-	height: 500px;
-}
-
-.slider-panel {
-	border: 0px;
-}
 </style>
 
 </head>
@@ -75,7 +62,7 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -108,189 +95,210 @@
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+		<!-- Full Width Column -->
+		<div class="content-wrapper">
 
 
-		<!-- /container -->
-		<!-- Full code -->
+			<div class="box-body">
+				<div id="carousel-example-generic" class="carousel slide"
+					data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0"
+							class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"
+							class=""></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"
+							class=""></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src=<c:url value="/resources/images/web1.jpg"/>
+								alt="First slide">
 
-
-		
-			<div class="panel panel-default slider-panel">
-				<div class="panel-body	slider-body">
-					<div id="boxgallery" class="boxgallery" data-effect="effect-2">
-						<div class="panel">
-							<img src=<c:url value="resources/images/main-slide-1.jpg"/>
-								alt="Image 1" />
+							<!-- <div class="carousel-caption">First Slide</div> -->
 						</div>
-						<div class="panel">
-							<img src=<c:url value="resources/images/main-slide-3.jpg"/>
-								alt="Image 2" />
+						<div class="item">
+							<img src=<c:url value="/resources/images/web2.jpg"/>
+								alt="First slide">
+
+							<!--<div class="carousel-caption">Second Slide</div>-->
 						</div>
-						<header class="codrops-header"> <img
-							class="img-responsive"
-							src=<c:url value="resources/images/FUNDHOUSE_LOGO.png"/>
-							alt="Image 2" /> </header>
+						<div class="item">
+							<img src=<c:url value="/resources/images/web3.jpg"/>
+								alt="First slide">
+
+							<!--<div class="carousel-caption">Third Slide</div>-->
+						</div>
 					</div>
+					<a class="left carousel-control" href="#carousel-example-generic"
+						data-slide="prev"> <span class="fa fa-angle-left"></span>
+					</a> <a class="right carousel-control" href="#carousel-example-generic"
+						data-slide="next"> <span class="fa fa-angle-right"></span>
+					</a>
 				</div>
 			</div>
+			<div class="control-sidebar-bg"></div>
 
-			</section>
-			<!-- /.container END navi -->
-			<!-- Simple-Box -->
-			<section class="content section-simple-box">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<div class="simple-box">
-							<div class="simple-box-content text-center">18 hrs</div>
-							<div class="simple-box-footer">Approval Time</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12  col-sm-4 col-md-4">
-						<div class="simple-box">
-							<div class="simple-box-content text-center">900</div>
-							<div class="simple-box-footer">Inverstors</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<div class="simple-box">
-							<div class="simple-box-content text-center">90%</div>
-							<div class="simple-box-footer">Inverstor Approval</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12  col-sm-4 col-md-4">
-						<div class="simple-box">
-							<div class="simple-box-content text-center">1000</div>
-							<div class="simple-box-footer">Borrowers</div>
-
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<div class="simple-box">
-							<div class="simple-box-content text-center">15%</div>
-							<div class="simple-box-footer">Avg Interest</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-4 col-md-4">
-						<div class="simple-box">
-							<div class="simple-box-content text-center">5000</div>
-							<div class="simple-box-footer">Avg Amount</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</section>
-			<!-- END simple-Blogs  -->
-			<section class="secion-static-content">
-			<div class="container">
-
-				<h1 class="text-center">About Fundhouse</h1>
-				<p>In this growing global market getting in touch with potential
-					investors and borrowers is challenging and this is where Fundhouse
-					comes into play. Fundhouse is an online marketplace where potential
-					Investors and pre-verified, creditworthy borrowers connect and
-					pursue bilateral transactions. Fundhouse helps strike deals amongst
-					the Investors and the borrowers and also help in repayment.</p>
-
-
-			</div>
-			</section>
 
 		</div>
+	</div>
+	<!-- /.container END navi -->
+	<!-- Simple-Box -->
+	<section class="content section-simple-box">
+	<div class="container">
 
-
-
-
-
-
-
-		<footer class="main-footer"> <!-- ROW 1 -->
-
-		<div class="container">
-
-			<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-2 column">
-					<h4>Information</h4>
-					<ul class="nav">
-						<li><a href="about-us.html">Products</a></li>
-						<li><a href="about-us.html">Services</a></li>
-						<li><a href="about-us.html">Benefits</a></li>
-						<li><a href="elements.html">Developers</a></li>
-					</ul>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="simple-box">
+					<div class="simple-box-content text-center">18 hrs</div>
+					<div class="simple-box-footer">Approval Time</div>
 				</div>
-				<div class="col-xs-6 col-md-2 column">
-					<h4>Follow Us</h4>
-					<ul class="nav">
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Google+</a></li>
-						<li><a href="#">Pinterest</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-6 col-md-2 column">
-					<h4>Contact Us</h4>
-					<ul class="nav">
-						<li><a href="#">Email</a></li>
-						<li><a href="#">Headquarters</a></li>
-						<li><a href="#">Management</a></li>
-						<li><a href="#">Support</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-6 col-md-2 column">
-					<h4>Customer Service</h4>
-					<ul class="nav">
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Delivery Information</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms &amp; Conditions</a></li>
-					</ul>
-				</div>
-
 			</div>
-			<div class="row">
-				<div class="footer-botom">
-					<div class="col-lg-10 col-md-4 column">
-						<div class="text-center">
-							<small>FUNDHOUSE A Trade Name of TRUEALLIANCE CONSULTANCY
-								MANAGEMENT INDIA LIMITED</small>
-						</div>
-						<div class="text-center">
-							<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 column">
 
-						<ul class="social list-inline">
-							<li><a target="_blank" href="https://twitter.com/lendboxin"><i
-									class="fa fa-twitter"></i>
-									</h6></li>
-							<li><a target="_blank"
-								href="https://www.facebook.com/pages/Lendbox/641410082662094"><i
-									class="fa fa-facebook"></i></a></li>
-							<li><a target="_blank"
-								href="https://plus.google.com/u/0/b/104085647914169330781/"><i
-									class="fa fa-google-plus"></i></a></li>
-							<li><a target="_blank"
-								href="https://instagram.com/lendbox.in"><i
-									class="fa fa-instagram"></i></a></li>
-							<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
-						</ul>
+			<div class="col-xs-12  col-sm-4 col-md-4">
+				<div class="simple-box">
+					<div class="simple-box-content text-center">900</div>
+					<div class="simple-box-footer">Inverstors</div>
+				</div>
+			</div>
 
-					</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="simple-box">
+					<div class="simple-box-content text-center">90%</div>
+					<div class="simple-box-footer">Inverstor Approval</div>
 				</div>
 			</div>
 		</div>
-		</footer>
+		<div class="row">
+			<div class="col-xs-12  col-sm-4 col-md-4">
+				<div class="simple-box">
+					<div class="simple-box-content text-center">1000</div>
+					<div class="simple-box-footer">Borrowers</div>
+
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="simple-box">
+					<div class="simple-box-content text-center">15%</div>
+					<div class="simple-box-footer">Avg Interest</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="simple-box">
+					<div class="simple-box-content text-center">5000</div>
+					<div class="simple-box-footer">Avg Amount</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<!-- END simple-Blogs  -->
+	<section class="secion-static-content">
+	<div class="container">
+
+		<h1 class="text-center">About Fundhouse</h1>
+		<p>In this growing global market getting in touch with potential
+			investors and borrowers is challenging and this is where Fundhouse
+			comes into play. Fundhouse is an online marketplace where potential
+			Investors and pre-verified, creditworthy borrowers connect and pursue
+			bilateral transactions. Fundhouse helps strike deals amongst the
+			Investors and the borrowers and also help in repayment.</p>
+
 
 	</div>
+	</section>
+
+
+
+
+
+
+
+
+
+	<footer class="main-footer"> <!-- ROW 1 -->
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-2 column">
+				<h4>Information</h4>
+				<ul class="nav">
+					<li><a href="about-us.html">Products</a></li>
+					<li><a href="about-us.html">Services</a></li>
+					<li><a href="about-us.html">Benefits</a></li>
+					<li><a href="elements.html">Developers</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-md-2 column">
+				<h4>Follow Us</h4>
+				<ul class="nav">
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Google+</a></li>
+					<li><a href="#">Pinterest</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-md-2 column">
+				<h4>Contact Us</h4>
+				<ul class="nav">
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Headquarters</a></li>
+					<li><a href="#">Management</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-md-2 column">
+				<h4>Customer Service</h4>
+				<ul class="nav">
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Delivery Information</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms &amp; Conditions</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="footer-botom">
+				<div class="col-lg-10 col-md-4 column">
+					<div class="text-center">
+						<small>FUNDHOUSE A Trade Name of TRUEALLIANCE CONSULTANCY
+							MANAGEMENT INDIA LIMITED</small>
+					</div>
+					<div class="text-center">
+						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 column">
+
+					<ul class="social list-inline">
+						<li><a target="_blank" href="https://twitter.com/lendboxin"><i
+								class="fa fa-twitter"></i>
+								</h6></li>
+						<li><a target="_blank"
+							href="https://www.facebook.com/pages/Lendbox/641410082662094"><i
+								class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank"
+							href="https://plus.google.com/u/0/b/104085647914169330781/"><i
+								class="fa fa-google-plus"></i></a></li>
+						<li><a target="_blank"
+							href="https://instagram.com/lendbox.in"><i
+								class="fa fa-instagram"></i></a></li>
+						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+
 	<!-- Js File 		  -->
+
+
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -305,12 +313,5 @@
 		type="text/javascript"></script>
 	<script src=<c:url value="/resources/js/demo.js"/>
 		type="text/javascript"></script>
-	<script src=<c:url value="/resources/js/Slider/boxesFx.js"/>
-		type="text/javascript"></script>
-	<script src=<c:url value="/resources/js/Slider/classie.js"/>
-		type="text/javascript"></script>
-	<script>
-		new BoxesFx(document.getElementById('boxgallery'));
-	</script>
 </body>
 </html>

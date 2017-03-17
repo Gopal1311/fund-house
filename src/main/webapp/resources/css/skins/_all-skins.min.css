@@ -36,7 +36,7 @@
 		background-color: rgba(255, 255, 255, 0.1)
 	}
 	.skin-blue .main-header .navbar .dropdown-menu li a {
-		color: #fff
+		color: white;
 	}
 	.skin-blue .main-header .navbar .dropdown-menu li a:hover {
 		background: #367fa9
@@ -2096,7 +2096,9 @@
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
-	p {
+	
+}
+p {
 		font-size: 17px;
 		margin: 13px 0px 13px 0px;
 		line-height: 1.5;
@@ -2125,7 +2127,7 @@
 	}
 	.setion-how-it-works-inner {
 		background-color: white;
-		min-width: 1000px;
+		
 		padding: 50px;
 		margin-bottom: 120px;
 		max-width: 900px;
@@ -2238,7 +2240,11 @@
 		min-height: 100px;
 		max-width: 200px;
 		padding: 10px;
-		margin: 10px;
+		margin-bottom: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		
+		
 	}
 	.simple-box .simple-box-content {
 		color: #e78c5b;
@@ -2251,7 +2257,7 @@
 		padding-bottom: 10px;
 	}
 	.section-simple-box {
-		padding: 80px;
+		padding: 80px 0px;
 		
 	}
 	.secion-static-content {
@@ -2274,4 +2280,3 @@
 	{
 		background-color: white;
 	}
-}

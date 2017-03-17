@@ -37,10 +37,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Fund House</title>
 <style>
-.section-signup 
-{
-	padding: 60px 0px 100px 0px;
+.section-signup {
+	padding: 80px 0px 100px 0px;
 }
+
 error a {
 	color: blue;
 }
@@ -236,7 +236,7 @@ label.error {
 		float: left;
 	}
 	.heading-img h3 {
-		float: left;	
+		float: left;
 		margin: 20px 0 0 5px;
 		font-size: 16px;
 	}
@@ -246,7 +246,6 @@ label.error {
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper myBgwrapper">
-
 		<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
@@ -289,9 +288,11 @@ label.error {
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+
 		<!-- Sing up borrower -->
 		<div class="handle-bg container about-handle-bg "></div>
 		<section class="section-signup container">
+		<div class="container">
 			<div
 				class="otp-section  col-md-10 col-sm-12 col-xs-12 col-md-offset-1">
 				<section
@@ -302,8 +303,8 @@ label.error {
 
 
 
+						<h3>Become a Investor</h3>
 
-						<h3>Become an Investor</h3>
 
 					</div>
 
@@ -312,18 +313,19 @@ label.error {
 
 						<div class="row">
 
-
 							<div class="col-md-6">
 								<div
 									class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 									<input
 										class="mdl-textfield__input mdl-textfield--floating-label"
-										type="text" id="amount_to_borrow" min="25000" max="1000000"
+										type="text" id="amount_to_borrow" min="25000" max="500000"
 										name="amount"> <label class="mdl-textfield__label"
-										for="amount_to_borrow">Amount to Invest (Rs.25,000 -
-										10,00,000)</label>
+										for="amount_to_borrow">Amount to Borrow (Rs.25,000 -
+										5,00,000)</label>
 								</div>
 							</div>
+
+
 
 
 						</div>
@@ -436,8 +438,8 @@ label.error {
 								</div>
 							</div>
 
+
 						</div>
-						<div class="row"></div>
 
 						<div class="row">
 							<div class="col-md-2">
@@ -458,9 +460,10 @@ label.error {
 									class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 									<input
 										class="mdl-textfield__input mdl-textfield--floating-label"
-										type="text" id="fname" name="fname"
+										type="text" id="fname" name="firstName"
 										style="text-transform: capitalize;"> <label
-										class="mdl-textfield__label" for="fname">First Name</label>
+										class="mdl-textfield__label" for="firstName">First
+										Name</label>
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -468,9 +471,9 @@ label.error {
 									class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 									<input
 										class="mdl-textfield__input mdl-textfield--floating-label"
-										type="text" id="lname" name="lname"
+										type="text" id="lname" name="lastName"
 										style="text-transform: capitalize;"> <label
-										class="mdl-textfield__label" for="lname">Last Name</label>
+										class="mdl-textfield__label" for="lastName">Last Name</label>
 								</div>
 							</div>
 						</div>
@@ -480,8 +483,8 @@ label.error {
 									class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 									<input
 										class="mdl-textfield__input mdl-textfield--floating-label"
-										type="email" id="email" name="username" value=""> <label
-										class="mdl-textfield__label" for="email">Email</label>
+										type="email" id="email" name="login.userName" value="">
+									<label class="mdl-textfield__label" for="email">Email</label>
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -489,8 +492,8 @@ label.error {
 									class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 									<input
 										class="mdl-textfield__input mdl-textfield--floating-label"
-										type="password" id="password" name="password" value="">
-									<label class="mdl-textfield__label" for="password">Create
+										type="password" id="password" name="login.password" value="">
+									<label class="mdl-textfield__label" for="login.password">Create
 										a Password</label>
 								</div>
 							</div>
@@ -525,72 +528,26 @@ label.error {
 
 
 
-
 						<div class="col-md-12">
 							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
 								for="c3"> <input type="checkbox" id="c3" name="c3"
 								class="mdl-checkbox__input"> <span
-								class="mdl-checkbox__label">I authorize Lendbox to do
-									background checks on my profile in accordance with Anti Money
-									Laundering Laws, if required </span><br /> <span
+								class="mdl-checkbox__label">I authorize Fundhouse to make
+									any enquiries with any finance company/bank/registered credit
+									bureau regarding my credit history with them </span><br /> <span
 								style="display: none;" class="text-error" id="c3text-error">Accept</span>
 							</label>
 						</div>
 
 
+
+			
 						<div>
-							<input type="hidden" id="userType" name="userType"
+							<input type="hidden" id="userType" name="login.userType"
 								value="INVESTOR" />
 						</div>
 						<div>
 							<input type="hidden" name="" value="" />
-						</div>
-
-
-						<div class="row" id="referredBy" style="display: none;">
-
-							<div class="col-md-12"
-								style="padding: 10px 40px; background-color: #efefef; margin-top: 20px;">
-								<div class="col-md-2"
-									style="margin-top: 24px; color: #777; font-size: 14px;">Referred
-									by</div>
-								<div class="col-md-2" style="margin-top: 23px;">
-									<label style="margin-left: 20px;"
-										class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-										for="refMobile"> <input id="refMobile" type="radio"
-										class="mdl-radio__button" name="referralType" value="1"
-										checked disabled> <span class="mdl-radio__label">Mobile</span>
-									</label>
-								</div>
-								<div class="col-md-2" style="margin-top: 23px;">
-									<label style="margin-left: 20px;"
-										class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-										for="refEmail"> <input id="refEmail" type="radio"
-										class="mdl-radio__button" name="referralType" value="2"
-										disabled> <span class="mdl-radio__label">Email</span>
-									</label>
-								</div>
-
-								<div class="col-md-6">
-									<div id="refMobileInput"
-										class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input
-											class="mdl-textfield__input mdl-textfield--floating-label"
-											type="tel" name="referralMobile" id="referralMobile">
-										<label class="mdl-textfield__label" for="referralMobile">
-											Mobile (Optional)</label>
-									</div>
-									<div id="refEmailInput"
-										class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
-										style="display: none;">
-										<input
-											class="mdl-textfield__input mdl-textfield--floating-label"
-											type="tel" name="referralEmail" id="referralEmail"> <label
-											class="mdl-textfield__label" for="referralEmail">
-											Email (Optional)</label>
-									</div>
-								</div>
-							</div>
 						</div>
 
 
@@ -620,16 +577,17 @@ label.error {
 						</div>
 					</div>
 				</div>
+
 				</section>
-
-
-				
-
-
 			</div>
 
-			<!-- END Sign up -->
-		</section>
+
+
+
+		</div>
+
+
+		<!-- END Sign up --> </section>
 
 
 
@@ -712,18 +670,26 @@ label.error {
 
 		<!-- Js File 		  -->
 
-</div>
+	</div>
 
 
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script
+		src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
+		type="text/javascript"></script>
+	<script src="https://code.getmdl.io/1.2.1/material.min.js"
+		type="text/javascript"></script>
 
-		<script src=<c:url value="/resources/js/material.min.js"/>
-			type="text/javascript"></script>
-		<script src=<c:url value="/resources/js/mdl-selectfield.min.js"/>
-			type="text/javascript"></script>
+	<script src=<c:url value="/resources/js/material.min.js"/>
+		type="text/javascript"></script>
+	<script src=<c:url value="/resources/js/mdl-selectfield.min.js"/>
+		type="text/javascript"></script>
+	<script src=<c:url value="/resources/js/custom/signInValidate.js"/>
+		type="text/javascript"></script>
+
 </body>
 </html>

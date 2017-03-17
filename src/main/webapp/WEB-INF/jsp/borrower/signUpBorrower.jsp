@@ -1,4 +1,3 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!-- Core -->
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%><!--From-->
 
@@ -104,7 +103,7 @@ label {
 }
 
 #resend_otp {
-	color: #3C8DBC;
+	color: #47c9af;
 }
 
 .button-submit {
@@ -247,7 +246,6 @@ label.error {
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper myBgwrapper">
-
 		<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
@@ -277,7 +275,6 @@ label.error {
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
-							
 							<li><a href="signUpInvestor">Investor</a></li>
 							<li><a href="signUpBorrower">Borrower</a></li>
 
@@ -291,6 +288,7 @@ label.error {
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+
 		<!-- Sing up borrower -->
 		<div class="handle-bg container about-handle-bg "></div>
 		<section class="section-signup container">
@@ -310,7 +308,7 @@ label.error {
 
 					</div>
 
-					<form action="step1" novalidate="novalidate" id="signup_form" method="post">
+					<form novalidate="novalidate" id="signup_form" method="post">
 
 
 						<div class="row">
@@ -468,13 +466,13 @@ label.error {
 									<select class="mdl-selectfield__select" id="loan_duration"
 										name="loanDuration" required>
 										<option></option>
-										<option>3</option>
-										<option>6</option>
-										<option>12</option>
-										<option>18</option>
-										<option>24</option>
-										<option>30</option>
-										<option>36</option>
+										<option value="3">3</option>
+										<option value="6">6</option>
+										<option value="12">12</option>
+										<option value="18">18</option>
+										<option value="24">24</option>
+										<option value="30">30</option>
+										<option value="36">36</option>
 									</select> <label class="mdl-selectfield__label" for="loan_duration">Loan
 										Duration (in Months)</label>
 								</div>
@@ -602,7 +600,8 @@ label.error {
 										class="mdl-textfield__input mdl-textfield--floating-label"
 										type="text" id="fname" name="firstName"
 										style="text-transform: capitalize;"> <label
-										class="mdl-textfield__label" for="firstName">First Name</label>
+										class="mdl-textfield__label" for="firstName">First
+										Name</label>
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -622,8 +621,8 @@ label.error {
 									class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 									<input
 										class="mdl-textfield__input mdl-textfield--floating-label"
-										type="email" id="email" name="login.userName" value=""> <label
-										class="mdl-textfield__label" for="email">Email</label>
+										type="email" id="email" name="login.userName" value="">
+									<label class="mdl-textfield__label" for="email">Email</label>
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -703,7 +702,7 @@ label.error {
 
 						<div style="float: left;">
 
-							<button type="submit" style="color: #fff !important; margin: 44px 0 20px 15px;"
+							<button style="color: #fff !important; margin: 44px 0 20px 15px;"
 								id="signup-submit-btn"
 								class="submit-btn-otp mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Continue</button>
 
@@ -829,12 +828,15 @@ label.error {
 	<script
 		src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
 		type="text/javascript"></script>
+	<script src="https://code.getmdl.io/1.2.1/material.min.js"
+		type="text/javascript"></script>
+
 	<script src=<c:url value="/resources/js/material.min.js"/>
 		type="text/javascript"></script>
 	<script src=<c:url value="/resources/js/mdl-selectfield.min.js"/>
 		type="text/javascript"></script>
 	<script src=<c:url value="/resources/js/custom/signInValidate.js"/>
 		type="text/javascript"></script>
-	
+
 </body>
 </html>

@@ -22,6 +22,7 @@
 			$("#signup_form")
 					.validate(
 							{
+								
 								rules : {
 
 									amount : {
@@ -65,15 +66,18 @@
 									},
 									"login.userName" : {
 										required : true,
-										email : true
-									/*
-									 * remote : { url : "isUsernameAvailable",
-									 * type : "post",
-									 * 
-									 * data : { username : function() { return
-									 * $("#email").val(); }
-									 *  } }
-									 */
+										email : true,
+										remote : {
+											url : "/FoundHouse/isUsernameAvailable",
+											type : "post",
+											data : {
+												username : function() {
+													return $("#email").val();
+												}
+
+											}
+											
+										}
 									},
 									"login.password" : {
 										required : true,
@@ -84,15 +88,17 @@
 										required : true,
 										minlength : 10,
 										maxlength : 10,
-										digits : true
-									/*
-									 * remote : { url : "isNumberAvailable",
-									 * type : "post",
-									 * 
-									 * data : { mobile : function() { return
-									 * $("#mobile").val(); } } }
-									 */
+										digits : true,
+										remote : {
+											url : "/FoundHouse/isNumberAvailable",
+											type : "post",
+											data : {
+												mobile : function() {
+													return $("#mobile").val();
+												}
 
+											}
+										}
 									},
 									referralEmail : {
 										email : true
@@ -101,7 +107,7 @@
 										minlength : 10,
 										maxlength : 10,
 										digits : true
-									}
+									},
 								},
 
 								messages : {
@@ -127,9 +133,8 @@
 									},
 
 									"login.userName" : {
-										required : "Please enter a valid email id"
-									// remote : "Email Id already exists. <a
-									// target='_blank'href='forgotPassword'>ForgetPassword?</a>"
+										required : "Please enter a valid email id",
+										remote : "Email Id already exists. <a target='_blank'href='forgotPassword'>ForgetPassword?</a>"
 									},
 
 									firstName : {
@@ -151,9 +156,9 @@
 
 									mobile : {
 										required : "Please provide a valid mobile number",
-										digits : "Please enter a valid mobile number"
-									// remote : "Mobile Number Already
-									// Registered"
+										digits : "Please enter a valid mobile number",
+									remote : "Mobile Number Already  Registered",
+								
 									},
 									referralmobile : {
 										digits : "Please enter a valid Referral mobile number"
@@ -164,45 +169,75 @@
 									problem_statement : {
 										required : "Please provide a problem statement"
 									}
-								}
+								},
 
 								submitHandler : function(form) {
-									var ajaxUrl = "";
+									type = $("#userType").val();
+									alert(type);
+									if ($("#userType").val() == "BORROWER") {
+
+										var ajaxUrl = "/FoundHouse/registerUser";
+									} else {
+										var ajaxUrl = "/FoundHouse/registerInvestor";
+									}
 									if ($('#c1').is(":checked")
 											&& $('#c3').is(":checked")) {
-										$('#signup_loader').show();
+										alert($("#signup_form").serialize());
+
 										$
 												.ajax({
 													url : ajaxUrl,
-													type : "POST",
+													dataType : 'text',
+													type : 'POST',
 													data : $("#signup_form")
 															.serialize(),
 													success : function(response) {
-														$('#signup_loader')
-																.hide();
+														var data = $
+																.parseJSON(response);
+														alert(response);
+														alert(data.roi);
 														if (!response.error) {
 
-															window.location = 'step1?'
-																	+ '&token='
-																	+ response.data.token
-																	+ '&id='
-																	+ response.data.id;
-															$(
-																	'#signup-submit-btn')
-																	.attr(
-																			"disabled",
-																			true);
+															/*
+															 * window.location =
+															 * 'step1?' +
+															 * '&token=' +
+															 * response.data.token +
+															 * '&id=' +
+															 * response.data.id; $(
+															 * '#signup-submit-btn')
+															 * .attr(
+															 * "disabled",
+															 * true);
+															 */
+															alert("OK Bye");
+															if (type == "BORROWER") {
+																window.location = "detailsSteps";
+															}if (type =="INVESTOR") {
+																window.location = "detailSteps";
+															}
+									
+															
+															
 														} else {
 															alert(response.message);
-															$(
-																	'#signup-submit-btn')
-																	.attr(
-																			"disabled",
-																			false);
+															/*
+															 * $(
+															 * '#signup-submit-btn')
+															 * .attr(
+															 * "disabled",
+															 * false);
+															 */
+
 														}
 													},
-													error : function() {
-														alert("error");
+													error : function(xhr,
+															textStatus,
+															errorThrown) {
+														// var err = eval("(" +
+														// xhr.responseText +
+														// ")");
+														alert(xhr.responseText);
 													}
 												});
 									}
@@ -230,16 +265,19 @@ $(document).ready(
 
 			$('#loan_city,#loan_duration,#loan_pupose,#format,#title').on(
 					'change', function() {
+						
 						$("#signup_form").validate().element($(this));
 						// alert("Changed: " + $(this).attr('id'));
 					});
 			$('#signup-submit-btn').click(function() {
-			changeCheckboxError('c1');
-			changeCheckboxError('c3');
+				$('input[type=text]').each(function() {
+					this.value = toTitleCase(this.value);
+				});
+				changeCheckboxError('c1');
+				changeCheckboxError('c3');
 			});
 
 		});
-
 
 function changeCheckboxError(id) {
 	error_text_id = '#' + id + 'text-error';
@@ -248,4 +286,18 @@ function changeCheckboxError(id) {
 	} else {
 		$(error_text_id).show();
 	}
+}
+function toTitleCase(str) {
+	str = str.replace(/\w\S*/g, function(txt) {
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	});
+	str = str.replace(/\.\s*\w/g, function(txt) {
+		return txt.substr(0, txt.length - 1)
+				+ txt.charAt(txt.length - 1).toUpperCase()
+	});
+	str = str.replace(/\,\s*\w/g, function(txt) {
+		return txt.substr(0, txt.length - 1)
+				+ txt.charAt(txt.length - 1).toUpperCase()
+	});
+	return str;
 }

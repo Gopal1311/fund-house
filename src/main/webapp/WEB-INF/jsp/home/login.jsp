@@ -99,7 +99,6 @@ access-section .divider {
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper">
-
 		<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
@@ -109,7 +108,7 @@ access-section .divider {
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -142,6 +141,7 @@ access-section .divider {
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+
 		<!-- ******Login Section****** -->
 		<section class="login-section access-section section">
 		<div class="container">

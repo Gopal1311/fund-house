@@ -16,11 +16,12 @@
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
 
-	  <context:component-scan base-package="com.pyplyn" />
+	<context:component-scan base-package="com.pyplyn" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/jsp/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
@@ -28,6 +29,77 @@
 	<!-- css , Js , Bootstrap -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 
+	<!-- Basic Data sources -->
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/fundhouse" />
+		<property name="username" value="root" />
+		<property name="password" value="" />
+	</bean>
+
+	<!-- Hibernate 4 SessionFactory Bean definition -->
+	<bean id="hibernate4AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses"><!-- packagesToScan -->
+			<list>
+				<value>com.pyplyn.bean.BorrowersDetail</value>
+				<value>com.pyplyn.bean.FientialDetail</value>
+				<value>com.pyplyn.bean.Login</value>
+				<value>com.pyplyn.bean.PersonalDetails</value>
+				<value>com.pyplyn.bean.SalaryEmp</value>
+				<value>com.pyplyn.bean.SelfEmp</value>
+				<value>com.pyplyn.bean.investor.InvestorPersonalDetail</value>
+				<value>com.pyplyn.bean.investor.InvestorsDetails</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- Login -->
+	<bean id="loginDao" class="com.pyplyn.dao.LoginDaoImpl">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	<bean id="loginService" class="com.pyplyn.service.LoginServiceImpl">
+		<property name="dao" ref="loginDao"></property>
+	</bean>
+
+
+	<!-- Borrower -->
+	<bean id="borrowerDao" class="com.pyplyn.dao.BorrowerDaoImpl">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	<bean id="borrowerService" class="com.pyplyn.service.BorrowerServiceImpl">
+		<property name="dao" ref="borrowerDao"></property>
+	</bean>
+
+
+	<!-- Inversstor -->
+	<bean id="investorDao" class="com.pyplyn.dao.InvestorDaoImpl">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	<bean id="investorService" class="com.pyplyn.service.InvestorServiceImpl">
+		<property name="dao" ref="investorDao"></property>
+	</bean>
+
+
+	<!-- Transection Manager -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
 
 
 </beans>

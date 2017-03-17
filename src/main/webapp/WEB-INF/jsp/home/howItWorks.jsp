@@ -37,7 +37,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper">
 		<!-- Navi barr -->
-		<header class="main-header"> <nav
+			<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
 			<div class="navbar-header">
@@ -46,7 +46,7 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
@@ -66,7 +66,7 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
-						<li><a href="signUpInvestor">Investor</a></li>
+							<li><a href="signUpInvestor">Investor</a></li>
 							<li><a href="signUpBorrower">Borrower</a></li>
 
 						</ul></li>
@@ -108,7 +108,7 @@
 							<p>In this growing global market getting in touch with
 								potential investors and borrowers is challenging and this is
 								where FundHouse comes into play.</p>
-							<p>LENDBOX is an online marketplace where potential Investors
+							<p>fundbox is an online marketplace where potential Investors
 								and pre-verified, creditworthy borrowers connect and pursue
 								bilateral transactions. FundHouse helps strike deals amongst the
 								Investors and the borrowers and also help in repayment.</p>
@@ -139,7 +139,7 @@
 								electronic transfers via NEFT, netbanking, Auto Debits etc.</p>
 							<strong>DISCLAIMER:</strong>
 							<p>
-								LENDBOX does not play any role in any of the bilateral
+								fundbox does not play any role in any of the bilateral
 								transactions; we only charge a service fee for our services. To
 								know more <a class="contactUsSideSlider" href="#">CONTACT
 									US.</a>
@@ -154,7 +154,7 @@
 				<div class="col">
 					<div class="box box-bg collapsed-box">
 						<div class="box-header with-border">
-							<h3 class="box-title text-center">WHAT LENDBOX DOES?</h3>
+							<h3 class="box-title text-center">WHAT fundbox DOES?</h3>
 
 							<div class="box-tools pull-right">
 								<button type="button" class="btn btn-box-tool"
@@ -173,30 +173,30 @@
 								RBI/SEBI. For the same, we collect Personal, Professional,
 								Social and Financial details from each potential member.</p>
 							<p>Once borrower and investors come to a mutual agreement,
-								Lendbox will help them legalize the transaction by signing a
+								fundbox will help them legalize the transaction by signing a
 								formal contract. We make necessary provisions and help both
 								parties realize the deal without the necessity of a physical
 								meeting.</p>
 							<p>Once a loan is disbursed, we help investors with the
 								collection and recovery of loans as per official guidelines of
 								RBI for banks and financial institutions. Delay in repayment by
-								borrowers draw a penalty that is pursued by Lendbox as part of
+								borrowers draw a penalty that is pursued by fundbox as part of
 								the process.</p>
-							<p>We at Lendbox do not collect money deposits from either
+							<p>We at fundbox do not collect money deposits from either
 								borrowers or investors. All monetary transactions are directly
 								between the two parties.</p>
-							<p>Decisions to lend on Lendbox are entirely at the
+							<p>Decisions to lend on fundbox are entirely at the
 								discretion of potential investors. We do not guarantee fixed or
 								minimum rate of returns to any investor.</p>
-							<p>For further details, please read read Lendbox Term of use
+							<p>For further details, please read read fundbox Term of use
 								and Privacy policy</p>
-							<p>Lendbox does not give any financial advice or
+							<p>fundbox does not give any financial advice or
 								recommendations to either borrowers or investors on this
 								platform. Members are encouraged to make their own researched
 								and informed decisions and transact accordingly, free of any
 								coercion or any form of influence from us.</p>
 							<p>If you have further queries, feel free to email us at
-								support@lendbox.in</p>
+								support@fundbox.in</p>
 
 
 						</div>
@@ -209,7 +209,7 @@
 				<div class="col">
 					<div class="box box-bg collapsed-box">
 						<div class="box-header with-border">
-							<h3 class="box-title">BIDDING PROCESS OF LENDBOX</h3>
+							<h3 class="box-title">BIDDING PROCESS OF fundbox</h3>
 
 							<div class="box-tools pull-right">
 								<button type="button" class="btn btn-box-tool"
@@ -258,13 +258,13 @@
 						<!-- /.box-header -->
 						<div class="box-body body-padding">
 							<
-							<p>Lendbox encourages its user to use auto debits for
+							<p>fundbox encourages its user to use auto debits for
 								repayments. However, fund transfers can also happen through Bank
 								Cheques, IMPS, NEFT and other auto debits.</p>
 							<p>The funds are transferred directly between users. If PDCs
 								are issued for repayment, they are directly issues in the name
 								of the investors.</p>
-							<p>Lendbox also encourages its users to transfer money
+							<p>fundbox also encourages its users to transfer money
 								electronically from leading banks across the country.</p>
 
 						</div>
@@ -275,7 +275,7 @@
 			<!-- End Sections -->
 			<!-- Call Out -->
 			<div class="callout callout-info1 ">
-				<p>In recent times, Lendbox has helped a lot of individuals to
+				<p>In recent times, fundbox has helped a lot of individuals to
 					realize their dreams by serving their capital needs with complete
 					integrity</p>
 			</div>
@@ -343,7 +343,7 @@
 				<div class="col-lg-2 col-md-4 column">
 
 					<ul class="social list-inline">
-						<li><a target="_blank" href="https://twitter.com/lendboxin"><i
+						<li><a target="_blank" href="https://twitter.com/fundboxin"><i
 								class="fa fa-twitter"></i>
 								</h6></li>
 						<li><a target="_blank"
@@ -353,7 +353,7 @@
 							href="https://plus.google.com/u/0/b/104085647914169330781/"><i
 								class="fa fa-google-plus"></i></a></li>
 						<li><a target="_blank"
-							href="https://instagram.com/lendbox.in"><i
+							href="https://instagram.com/fundbox.in"><i
 								class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>

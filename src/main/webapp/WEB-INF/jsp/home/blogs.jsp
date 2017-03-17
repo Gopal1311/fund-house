@@ -33,7 +33,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper">
 		<!-- Nav -->
-		<header class="main-header"> <nav
+			<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
 			<div class="navbar-header">
@@ -42,13 +42,14 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="../../index2.html" class="navbar-brand"><b
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
 					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
 					<i class="fa fa-bars"></i>
 				</button>
 			</div>
+
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -63,14 +64,18 @@
 						<ul class="dropdown-menu " role="menu">
 							<li><a href="signUpInvestor">Investor</a></li>
 							<li><a href="signUpBorrower">Borrower</a></li>
+
 						</ul></li>
 					<li><a href="login">LOGIN</a></li>
+
 				</ul>
+
 				<!-- /.navbar-custom-menu -->
 			</div>
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+	
 		<!-- End Nav -->
 		<!-- Blogs -->
 		<section class="artical-section">

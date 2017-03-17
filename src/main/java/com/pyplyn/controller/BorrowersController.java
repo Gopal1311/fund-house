@@ -1,8 +1,11 @@
 package com.pyplyn.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.pyplyn.bean.BorrowersDetail;
 
 
 
@@ -26,15 +29,9 @@ public class BorrowersController {
 		return "borrower/signUpBorrower";
 	}
 	
-	@RequestMapping(value="signUpBorrower",method=RequestMethod.POST)
-	public void insertDetail()
-	{
-		System.out.println("signUpBorrower---->BorrowersController-->insertDetail()");
-	}
 	
-	@RequestMapping(value="/step1")
-	public String step1(){
-		System.out.println("signUpBorrower step1---->BorrowersController-->insertDetail()");
-		return "borrower/step1" ;
-	}
+	
+	
+	
+	
 }

@@ -79,6 +79,7 @@
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
+
 		<!-- END -->
 		<!--  Box -->
 		<div class="handle-bg container about-handle-bg "></div>

@@ -38,7 +38,7 @@
 	<div class="wrapper">
 
 		<!-- Nav Bar -->
-		<header class="main-header"> <nav
+			<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
 			<div class="navbar-header">
@@ -60,7 +60,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="${pageContext.request.contextPath}">HOME</a></li>
 					<li><a href="howItWorks">HOW IT WORKS</a></li>
-					<li><a href="investors">INVESTROS</a></li>
+					<li><a href="investors">INVESTORS</a></li>
 					<li><a href="borrowers">BORROWERS</a></li>
 					<li><a href="blogs">BLOGS</a></li>
 					<li><a href="aboutUs">ABOUT US</a></li>
@@ -69,6 +69,7 @@
 						<ul class="dropdown-menu " role="menu">
 							<li><a href="signUpInvestor">Investor</a></li>
 							<li><a href="signUpBorrower">Borrower</a></li>
+
 						</ul></li>
 					<li><a href="login">LOGIN</a></li>
 
@@ -79,7 +80,6 @@
 			<!-- /.container-fluid -->
 		</div>
 		</nav> </header>
-
 		<!-- END -->
 		<!-- BAck Img -->
 		<div class="handle-bg container about-handle-bg"></div>
@@ -125,22 +125,22 @@
 										transact on short to medium term <strong>personal
 											unsecured loans</strong>.
 									</p>
-									<p>fundhouse goes beyond conventional forms of risk analysis
-										of the borrower in order to serve a broader user base. Banks
-										typically look at CIBIL or other credit bureau scores to make
-										loan decisions. fundhouse takes into account 1000s of data
-										points to assess the creditworthiness of the borrower such as
-										net salary, expenditure trends, locality of stay, educational
-										qualification, utility and mobile bills, asset holding,
-										Investments, Credit card bills and online spending behavior
-										etc. This approach ensures that individuals with a less
-										favourable CIBIL score are also likely to get a loan through
-										our platform if they are credit worthy as our proprietary
-										machine learning algorithm generates a more holistic credit
-										profile of the borrower.</p>
-									<p>fundhouse offers borrowers with the convenience to getting
-										loans while sitting at home without having to visit a bank
-										numerous times to sign papers and other formalities</p>
+									<p>fundhouse goes beyond conventional forms of risk
+										analysis of the borrower in order to serve a broader user
+										base. Banks typically look at CIBIL or other credit bureau
+										scores to make loan decisions. fundhouse takes into account
+										1000s of data points to assess the creditworthiness of the
+										borrower such as net salary, expenditure trends, locality of
+										stay, educational qualification, utility and mobile bills,
+										asset holding, Investments, Credit card bills and online
+										spending behavior etc. This approach ensures that individuals
+										with a less favourable CIBIL score are also likely to get a
+										loan through our platform if they are credit worthy as our
+										proprietary machine learning algorithm generates a more
+										holistic credit profile of the borrower.</p>
+									<p>fundhouse offers borrowers with the convenience to
+										getting loans while sitting at home without having to visit a
+										bank numerous times to sign papers and other formalities</p>
 									<p>We ensure that the process is completely transparent
 										with no hidden charges levied on the borrower</p>
 									<p>fundhouse offers a streamlined and efficient approach to
@@ -156,8 +156,8 @@
 									<p>fundhouse is a platform for people with non-traditional
 										approach to borrowing, which ultimately results in lower
 										interest rates on the financing amount. All borrowers on
-										fundhouse must meet the following criteria to be eligible to be
-										listed on our platform:</p>
+										fundhouse must meet the following criteria to be eligible to
+										be listed on our platform:</p>
 									<ul class="list-unstyled">
 										<li><i class="fa fa-star"></i>You must be an Indian
 											Resident</li>
@@ -171,8 +171,9 @@
 											details on the website http://www.fundhouse.in</li>
 									</ul>
 									<p>Where a prospective investor doesn't meet the standards
-										listed above, the investor can't be a member of fundhouse, until
-										and unless specified by fundhouse in a written legal agreement.</p>
+										listed above, the investor can't be a member of fundhouse,
+										until and unless specified by fundhouse in a written legal
+										agreement.</p>
 									<div class="table-responsive">
 										<table class="table table-striped">
 											<thead>
@@ -222,8 +223,8 @@
 								<div class="tab-pane" id="tab_3">
 									<ul class="list-unstyled">
 										<p>Getting a loan largely depends on your capacity to pay.
-											At fundhouse, you can interact with investors and put forward a
-											clear and concise image of your creditworthiness. It is
+											At fundhouse, you can interact with investors and put forward
+											a clear and concise image of your creditworthiness. It is
 											advised that you as borrowers share as much information as
 											you deem appropriate to make your listing more effective so
 											that more and more investors offer you loans. No information
@@ -259,8 +260,8 @@
 										other personal use. fundhouse presently does not deal in
 										commercial or corporate finance.</p>
 									<p>fundhouse doesn't contemplate any reason to be unfit to
-										avail a loan. We at fundhouse don't differentiate and judge the
-										cause for which an individual is looking for a loan, other
+										avail a loan. We at fundhouse don't differentiate and judge
+										the cause for which an individual is looking for a loan, other
 										than the understandable circumstance that a person doesn't use
 										the money for any illegal or prohibited activity. One may
 										avail loans for several purposes such as:</p>
@@ -372,16 +373,17 @@
 										<li><i class="fa fa-star"></i><strong>Refund
 												Policy</strong></li>
 										<p>The eligibility of being a borrower is determined by
-											your intention and ability to repay the loan amount. fundhouse
-											reserves the right of selecting the borrowers suitable for
-											listing on its website. All borrower applications are subject
-											to stringent verification by the fundhouseâ€™s risk management
-											team and in case an application is not found suitable then
-											fundhouse reserves the right to partially refund the listing
-											fees paid by you and terminate your loan application.</p>
+											your intention and ability to repay the loan amount.
+											fundhouse reserves the right of selecting the borrowers
+											suitable for listing on its website. All borrower
+											applications are subject to stringent verification by the
+											fundhouseâ€™s risk management team and in case an
+											application is not found suitable then fundhouse reserves the
+											right to partially refund the listing fees paid by you and
+											terminate your loan application.</p>
 										<p>In case a loan application is rejected prior to listing
-											on the fundhouse portal then fundhouse will refund Rs.1000 to the
-											applicant and provide the following services:</p>
+											on the fundhouse portal then fundhouse will refund Rs.1000 to
+											the applicant and provide the following services:</p>
 										<p>1. An opportunity to register on the website and
 											explore the platform.</p>
 										<p>2. A detailed individual credit analysis report with
@@ -396,26 +398,26 @@
 								</div>
 								<!-- /.tab-pane -->
 
-								
+
 							</div>
 							<!-- /.tab-content -->
-							
+
 						</div>
 						<div class="row">
-						<div class="pad col-xs-4">
-									<label type="text" class="form-control "
-										style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
-								</div>
-								<div class="col-xs-4">
-						<a class="btn btn-block btn-primary btn-sm"
-									href="signupborrower" style="font-size: 18px;">Register as
+							<div class="pad col-xs-4">
+								<label type="text" class="form-control "
+									style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
+							</div>
+							<div class="col-xs-4">
+								<a class="btn btn-block btn-primary btn-sm"
+									href="signUpBorrower" style="font-size: 18px;">Register as
 									Borrowers</a>
-									</div>
-									<div class="pad col-xs-4">
-									<label type="text" class="form-control "
-										style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
-								</div>
-								</div>
+							</div>
+							<div class="pad col-xs-4">
+								<label type="text" class="form-control "
+									style="border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-left: 0px; padding-bottom: 0px; padding-right: 0px; padding-top: 0px; margin-bottom: 0px;">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -444,8 +446,8 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>fundhouse is a P2P Lending marketplace for people with idle
-									cash in their accounts and people with financial needs. It
+								<p>fundhouse is a P2P Lending marketplace for people with
+									idle cash in their accounts and people with financial needs. It
 									enables a loan between these borrowers and investors.</p>
 							</div>
 							<!-- /.box-body -->
@@ -614,10 +616,10 @@
 									penal interest of 2% p.m. will be applied to the amount due for
 									the duration of delay which Borrowers will be liable to pay
 									their Investor(s) + collection charges of Rs. 500 will be
-									charged to the Borrower by fundhouse. In the worst case scenario
-									fundhouse will facilitate the collections through empaneled
-									agencies. These are reputed collection agencies that are
-									empaneled by any bank and financial institutions. This also
+									charged to the Borrower by fundhouse. In the worst case
+									scenario fundhouse will facilitate the collections through
+									empaneled agencies. These are reputed collection agencies that
+									are empaneled by any bank and financial institutions. This also
 									includes legal process for recovery of funds if required.</p>
 							</div>
 							<!-- /.box-body -->
@@ -756,9 +758,9 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>No, as the rate and the amount was agreed in the fundhouse
-									marketplace. To increase the loan amount, you can create a
-									fresh loan request for the difference</p>
+								<p>No, as the rate and the amount was agreed in the
+									fundhouse marketplace. To increase the loan amount, you can
+									create a fresh loan request for the difference</p>
 							</div>
 							<!-- /.box-body -->
 						</div>
@@ -848,10 +850,10 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>Please write to support@fundhouse.in stating your old bank
-									details and the new ones that should replace the old details.
-									Swapping charges of Rs. 500 per swap will be applied to your
-									account.</p>
+								<p>Please write to support@fundhouse.in stating your old
+									bank details and the new ones that should replace the old
+									details. Swapping charges of Rs. 500 per swap will be applied
+									to your account.</p>
 							</div>
 							<!-- /.box-body -->
 						</div>
@@ -914,9 +916,9 @@
 							</div>
 							<!-- /.box-header -->
 							<div class="box-body body-padding">
-								<p>fundhouse verifies the financial documents submitted by the
-									borrower(s) which is considerably time consuming and thereby
-									delays the borrower's request being listed live on the
+								<p>fundhouse verifies the financial documents submitted by
+									the borrower(s) which is considerably time consuming and
+									thereby delays the borrower's request being listed live on the
 									marketplace for funding. An automated aggregation of bank feeds
 									from an extensive range of financial institutions enables us to
 									serve you better and help in getting you funded faster. We have
@@ -998,10 +1000,11 @@
 								<p>This is an important concern, as some people may feel
 									that using this service may be in violation of the Terms and
 									Conditions of some banks against revealing their username and
-									password but fundhouse cannot read, leave alone store any of your
-									bank information. However, each bank will have its own stance
-									stances on the use of bank aggregation, so you should make an
-									informed decision about whether bank feeds are right for you.</p>
+									password but fundhouse cannot read, leave alone store any of
+									your bank information. However, each bank will have its own
+									stance stances on the use of bank aggregation, so you should
+									make an informed decision about whether bank feeds are right
+									for you.</p>
 							</div>
 							<!-- /.box-body -->
 						</div>
