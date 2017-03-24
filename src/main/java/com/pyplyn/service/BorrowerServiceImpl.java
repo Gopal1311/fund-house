@@ -28,7 +28,7 @@ public class BorrowerServiceImpl implements BorrowerService {
 	@Transactional
 	public List<BorrowersDetail> getAllBorrower(String label) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getAllBorrower(label);
 	}
 
 	@Transactional

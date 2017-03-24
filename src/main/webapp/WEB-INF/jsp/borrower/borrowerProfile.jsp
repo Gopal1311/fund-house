@@ -169,7 +169,7 @@ label .checkbox {
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="perfiels2" name="borrowers">Borrower Field</a></li>
+					<li><a href="perfiels2" name="investor">Investor Field</a></li>
 					<li><a href="">Profile</a></li>
 					<li class="dropdown"><a href="" class="dropdown-toggle"
 						data-toggle="dropdown">Logout<span class="caret"></span></a>
@@ -177,7 +177,11 @@ label .checkbox {
 							<li><a href="">Change password</a></li>
 							<li><a href="login">Logout</a></li>
 
-						</ul> <!-- /.navbar-custom-menu -->
+						</ul></li>
+
+				</ul>
+
+				<!-- /.navbar-custom-menu -->
 			</div>
 			<!-- /.container-fluid -->
 		</div>
@@ -189,7 +193,7 @@ label .checkbox {
 
 				<div class="row">
 					<div class="col-sm-2 color">
-						<div class="box box-default box-solid">
+						<div class="box box-default collapsed-box box-solid">
 							<div class="box-header with-border">
 								<h5 class="box-title">No. of Deals closed</h5>
 
@@ -223,7 +227,7 @@ label .checkbox {
 							</div>
 							<!-- /.box-body -->
 						</div>
-						<div class="box box-default box-solid">
+						<div class="box box-default collapsed-box box-solid">
 							<div class="box-header with-border">
 								<h5 class="box-title">No. ROI Accepted</h5>
 
@@ -257,7 +261,7 @@ label .checkbox {
 							</div>
 							<!-- /.box-body -->
 						</div>
-						<div class="box box-default box-solid">
+						<div class="box box-default collapsed-box box-solid">
 							<div class="box-header with-border">
 								<h5 class="box-title">No. Personal Accepted</h5>
 
@@ -292,7 +296,7 @@ label .checkbox {
 							</div>
 							<!-- /.box-body -->
 						</div>
-						<div class="box box-default box-solid">
+						<div class="box box-default collapsed-box box-solid">
 							<div class="box-header with-border">
 								<h5 class="box-title">Amount</h5>
 
@@ -361,11 +365,12 @@ label .checkbox {
 						</div>
 
 					</div>
-
 					<div class="col-sm-8">
-
-
-						<div class="confirm"></div>
+						<!-- Profile-box -->
+						
+								<div class="confirm"></div>
+						
+						<!-- END -->
 					</div>
 					<div class="col-sm-2 box1">
 						<div class="row">
@@ -385,11 +390,7 @@ label .checkbox {
 
 	</div>
 
-
-
-
-
-				<footer class="main-footer"> <!-- ROW 1 -->
+			<footer class="main-footer"> <!-- ROW 1 -->
 
 	<div class="container">
 
@@ -491,7 +492,8 @@ label .checkbox {
 
 	</div>
 	</footer>	<!-- Js File-->
-	
+
+
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -513,32 +515,16 @@ label .checkbox {
 
 							$
 									.ajax({
-										url : "getAllBorrowers",
+										url : "getInvestorsProfiel",
 										type : 'POST',
 										success : function(response) {
 											var data = $.parseJSON(response);
 											var htmltag = "";
-											var currentYear = (new Date).getFullYear();
-											
-						
+
 											{
 												for (i = 0; i <= data.length; i++) {
-													year=data[i].personalDetails;
-										
-		htmltag = "<div class=\"profile-box\"><div><div class=\"profile-box-header\"><div class=\"row\"><div class=\"col-xs-12 col-sm-2 col-md-2\">Detail</div><div class=\"col-xs-12 col-sm-8 col-md-8\"><div class=\"progress progress-sm \"><divclass=\"progress-bar progress-bar-yellow=\"\" progress-bar-striped\"role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 50%\"><span class=\"sr-only\">40% Complete (success)</span></divclass=\"progress-bar></div></div></div></div></div><div class=\"profile-box-content\"><div class=\"content1\"><div class=\"row\"><div class=\"col-sm-10\">"
-															+ data[i].firstName
-															+ " From "
-															+ data[i].state
-															+ " wants invenst "
-															+ data[i].amount
-															+ "</div><div class=\"col-sm-2\"><a href=\"#\"><span class=\"glyphicon glyphicon-heart\"></span></a></div></div></div><div class=\"content2\"><div class=\"row\"><div class=\"col-sm-10\">Remaing Fund 0 Rs.</div></div></div><div class=\"content4\"><div class=\"row\"><div class=\"col-sm-12\"><p>Some content</p></div></div></div><div class=\"content3\"><div class=\"row\"><div class=\"col-sm-4\"><div class=\"info\">Avg. Proposal Accepted  </div><div class=\"per\">"
-															+ data[i].amount
-															+ "</div></div><div class=\"col-sm-4\"><div class=\"info\">No. of Deals Closed  </div><div class=\"per\">1</div></div><div class=\"col-sm-4\"><div class=\"info\">Avg. ROI Accepted  </div><div class=\"per\">"
-															+ data[i].roi
-															+ "%</div></div></div></div><div class=\"content6\"><div class=\"row\" style=\"background-color: white;\"><div class=\"col-sm-10\"></div><div class=\"col-sm-2\"><button type=\"button\" class=\"btn btn-default btn-circle btn-lg\"><i class=\"glyphicon glyphicon-ok\"></i></button></div></div></div></div><div class=\"profile-box-footer\"><div class=\"row\"><div class=\"col-sm-6\"><div class=\"info\"><div>Age</div><div>DOB</div></div></div><div class=\"col-sm-6\"><div class=\"info\"><div>Expected ROI</div><div>"
-															+ data[i].roi
-															+ "%</div></div></div></div></div></div>"
-													//alert(htmltag);
+												
+													htmltag ="<div class=\"profile-box\"><div><div class=\"profile-box-header\"><div class=\"row\"><div class=\"col-xs-12 col-sm-2 col-md-2\">Detail</div><div class=\"col-xs-12 col-sm-8 col-md-8\"><div class=\"progress progress-sm \"><divclass=\"progress-bar progress-bar-yellow=\"\" progress-bar-striped\"role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 50%\"><span class=\"sr-only\">40% Complete (success)</span></divclass=\"progress-bar></div></div></div></div></div><div class=\"profile-box-content\"><div class=\"content1\"><div class=\"row\"><div class=\"col-sm-10\">"+data[i].firstName+" From " + data[i].state+" wants invenst "+data[i].amount+"</div><div class=\"col-sm-2\"><a href=\"#\"><span class=\"glyphicon glyphicon-heart\"></span></a></div></div></div><div class=\"content2\"><div class=\"row\"><div class=\"col-sm-10\">Remaing Fund 0 Rs.</div></div></div><div class=\"content4\"><div class=\"row\"><div class=\"col-sm-12\"><p>Some content</p></div></div></div><div class=\"content3\"><div class=\"row\"><div class=\"col-sm-4\"><div class=\"info\">Avg. Proposal Accepted  </div><div class=\"per\">"+data[i].amount+"</div></div><div class=\"col-sm-4\"><div class=\"info\">No. of Deals Closed  </div><div class=\"per\">1</div></div><div class=\"col-sm-4\"><div class=\"info\">Avg. ROI Accepted  </div><div class=\"per\">"+data[i].roi+"%</div></div></div></div><div class=\"content6\"><div class=\"row\" style=\"background-color: white;\"><div class=\"col-sm-10\"></div><div class=\"col-sm-2\"><button type=\"button\" class=\"btn btn-default btn-circle btn-lg\"><i class=\"glyphicon glyphicon-ok\"></i></button></div></div></div></div><div class=\"profile-box-footer\"><div class=\"row\"><div class=\"col-sm-6\"><div class=\"info\"><div>Age</div><div>"+currentYear+"</div></div></div><div class=\"col-sm-6\"><div class=\"info\"><div>Expected ROI</div><div>"+data[i].roi+"%</div></div></div></div></div></div>"
 													$(".confirm").append(
 															htmltag);
 												}

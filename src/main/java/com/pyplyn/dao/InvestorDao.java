@@ -8,7 +8,7 @@ import com.pyplyn.bean.investor.InvestorsDetails;
 public interface InvestorDao {
 	public InvestorsDetails getInvestorById(int id);
 
-	public List<InvestorsDetails> getInvestor(String label);
+	public List<InvestorsDetails> getIAllnvestor(String label);
 
 	public void deleteInvestor(int id);
 

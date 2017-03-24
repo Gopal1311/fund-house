@@ -46,6 +46,15 @@
 .example-modal .modal {
 	background: transparent !important;
 }
+
+.section-heading {
+	font-size: 42px;
+	text-align: center;
+}
+
+.section-sub-heading {
+	font-size: 25px;
+}
 </style>
 
 </head>
@@ -73,20 +82,18 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="${pageContext.request.contextPath}">HOME</a></li>
-					<li><a href="howItWorks">HOW IT WORKS</a></li>
-					<li><a href="investors">INVESTROS</a></li>
-					<li><a href="borrowers">BORROWERS</a></li>
-					<li><a href="blogs">BLOGS</a></li>
-					<li><a href="aboutUs">ABOUT US</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
-						<ul class="dropdown-menu " role="menu">
-							<li><a href="signUpInvestor">Investor</a></li>
-							<li><a href="signUpBorrower">Borrower</a></li>
+					<li><a href="investors">INVESTORS</a></li>
 
+					<li><a href="borrowers">BORROWERS</a></li>
+
+					<li class="dropdown"><a href="" class="dropdown-toggle"
+						data-toggle="dropdown">SIGN UP & Login <span class="caret"></span></a>
+						<ul class="dropdown-menu " role="menu">
+							<li><a href="signUpInvestor">Sign up as Investor</a></li>
+							<li><a href="signUpBorrower">Sign up as Borrower</a></li>
+							<li><a href="login">Login</a></li>
 						</ul></li>
-					<li><a href="login">LOGIN</a></li>
+
 
 				</ul>
 
@@ -97,7 +104,6 @@
 		</nav> </header>
 		<!-- Full Width Column -->
 		<div class="content-wrapper">
-
 
 			<div class="box-body">
 				<div id="carousel-example-generic" class="carousel slide"
@@ -112,7 +118,7 @@
 					</ol>
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src=<c:url value="/resources/images/web1.jpg"/>
+							<img src=<c:url value="/resources/images/main-slide-1.jpg"/>
 								alt="First slide">
 
 							<!-- <div class="carousel-caption">First Slide</div> -->
@@ -124,27 +130,33 @@
 							<!--<div class="carousel-caption">Second Slide</div>-->
 						</div>
 						<div class="item">
-							<img src=<c:url value="/resources/images/web3.jpg"/>
+							<img src=<c:url value="/resources/images/main-slide-3.jpg"/>
 								alt="First slide">
 
 							<!--<div class="carousel-caption">Third Slide</div>-->
 						</div>
 					</div>
-					<a class="left carousel-control" href="#carousel-example-generic"
-						data-slide="prev"> <span class="fa fa-angle-left"></span>
-					</a> <a class="right carousel-control" href="#carousel-example-generic"
-						data-slide="next"> <span class="fa fa-angle-right"></span>
-					</a>
+
 				</div>
+				<img src="./resources/images/FUNDHOUSE.png"
+					class="handle-log img-responsive carousel-control center-block"
+					style="padding-top: 150px;">
+				<h4 class="handle-log img-responsive carousel-control center-block"
+					style="margin-top: 500px;">Introducing Peer To Peer Lending In
+					India</h4>
+				<p class="handle-log img-responsive carousel-control center-block"
+					style="margin-top: 520px;">Peer to peer lending is a worldwide
+					phenomenon and now it is available in India as well. P2P lending
+					enables borrowers to get instant personal loans while lenders can
+					multiply their savings online. Through peer to peer lending,
+					Fundhouse is poised to change the way India lends and borrows.</p>
 			</div>
 			<div class="control-sidebar-bg"></div>
 
 
 		</div>
 	</div>
-	<!-- /.container END navi -->
-	<!-- Simple-Box -->
-	<section class="content section-simple-box">
+	<section style="padding-bottom:80px;background-color:#F5F5F5;">
 	<div class="container">
 
 		<div class="row">
@@ -193,6 +205,74 @@
 			</div>
 		</div>
 	</div>
+
+	</section>
+	<!-- /.container END navi -->
+	<!-- Simple-Box -->
+	<section class="content section-simple-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<p class="section-heading">Media Coverage</p>
+				<p class="section-sub-heading">India's best P2P platform covered
+					on different medias</p>
+			</div>
+			<div class="col-sm-12">
+				<div class="row container">
+
+					<div class="col-sm-3">
+
+						<img 
+							src=<c:url value="/resources/images/partners/p1.png"/>
+							class="img-responsive center-block p1"></img>
+
+					</div>
+					<div class="col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p2.png"/>
+							class="img-responsive center-block p2"></img>
+					</div>
+					<div class=" col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p3.png"/>
+							class="img-responsive center-block p3"></img>
+					</div>
+					<div class=" col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p4.png"/>
+							class="img-responsive center-block p4"></img>
+					</div>
+
+				</div>
+				<div class="row container">
+
+					<div class=" col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p5.png"/>
+							class="img-responsive center-block p5"></img>
+					</div>
+					<div class=" col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p6.png"/>
+							class="img-responsive center-block p6"></img>
+					</div>
+					<div class=" col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p7.png"/>
+							class="img-responsive center-block p7"></img>
+					</div> 
+					<div class=" col-sm-3">
+						<img 
+							src=<c:url value="/resources/images/partners/p8.png"/>
+							class="img-responsive center-block p8"></img>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 	</section>
 	<!-- END simple-Blogs  -->
 	<section class="secion-static-content">
@@ -217,8 +297,7 @@
 
 
 
-
-	<footer class="main-footer"> <!-- ROW 1 -->
+						<footer class="main-footer"> <!-- ROW 1 -->
 
 	<div class="container">
 
@@ -226,66 +305,90 @@
 			<div class="col-xs-6 col-sm-6 col-md-2 column">
 				<h4>Information</h4>
 				<ul class="nav">
-					<li><a href="about-us.html">Products</a></li>
-					<li><a href="about-us.html">Services</a></li>
-					<li><a href="about-us.html">Benefits</a></li>
-					<li><a href="elements.html">Developers</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Benefits</a></li>
+					<li><a href="">Developers</a></li>
 				</ul>
 			</div>
 			<div class="col-xs-6 col-md-2 column">
 				<h4>Follow Us</h4>
 				<ul class="nav">
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Google+</a></li>
-					<li><a href="#">Pinterest</a></li>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Facebook</a></li>
+					<li><a href="">Google+</a></li>
+					<li><a href="">Pinterest</a></li>
 				</ul>
 			</div>
 			<div class="col-xs-6 col-md-2 column">
 				<h4>Contact Us</h4>
 				<ul class="nav">
-					<li><a href="#">Email</a></li>
-					<li><a href="#">Headquarters</a></li>
-					<li><a href="#">Management</a></li>
-					<li><a href="#">Support</a></li>
+					<li><a href="">Email</a></li>
+					<li><a href="">Headquarters</a></li>
+					<li><a href="">Management</a></li>
+					<li><a href="">Support</a></li>
 				</ul>
 			</div>
 			<div class="col-xs-6 col-md-2 column">
-				<h4>Customer Service</h4>
+				<h4>Useful Links</h4>
 				<ul class="nav">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Delivery Information</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms &amp; Conditions</a></li>
+					<li><a href="aboutUs">About Us</a></li>
+					<li><a href="howItWorks">How it works</a></li>
+					<li><a href="blogs">Blogs</a></li>
 				</ul>
 			</div>
-
-		</div>
-		<div class="row">
-			<div class="footer-botom">
-				<div class="col-lg-10 col-md-4 column">
-					<div class="text-center">
-						<small>FUNDHOUSE A Trade Name of TRUEALLIANCE CONSULTANCY
-							MANAGEMENT INDIA LIMITED</small>
+			<div class="col-xs-12 col-md-2 column">
+				<br>
+			</div>
+			<div class="col-xs-12 col-md-2 col-sm-4 column" >
+				<div class="row">
+					<div class="col-sm-12">
+						<h4>Join Newsletter</h4>
 					</div>
-					<div class="text-center">
-						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
+					<div class="row">
+						<div class="col-sm-12 col-xs-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Email"><span
+									class="input-group-btn"><button
+										class="btn btn-success-green">
+										<span class="fa fa-send-o"></span>
+									</button></span>
+							</div>
+							<br>
+							<div>New Delhi, India<br>
+							Phone number:+91 99933 32222<br>
+							Email: info@fundhouse.co.in</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-4 column">
 
-					<ul class="social list-inline">
-						<li><a target="_blank" href="https://twitter.com/lendboxin"><i
-								class="fa fa-twitter"></i>
-								</h6></li>
+			</div>
+		</div>
+		<div class="footer-botom container">
+			<div class="row">
+
+				<div class="col-lg-10 col-md-8  col-sm-8  column">
+					<div class="text-center">
+						<small>Fundhouse a Trade Name of Truealliance Consultancy
+							Management India Limited</small>
+					</div>
+					<div class="text-center">
+						<small>Copyright Â© 2027. All Rights Reserved Fundhouse</small>
+						</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-4 column">
+
+					<ul class="social list-inline" style="text-align: center;">
+						<li><a target="_blank" href=""><i
+								class="fa fa-twitter"></i></a></li>
 						<li><a target="_blank"
-							href="https://www.facebook.com/pages/Lendbox/641410082662094"><i
+							href=""><i
 								class="fa fa-facebook"></i></a></li>
 						<li><a target="_blank"
-							href="https://plus.google.com/u/0/b/104085647914169330781/"><i
+							href=""><i
 								class="fa fa-google-plus"></i></a></li>
 						<li><a target="_blank"
-							href="https://instagram.com/lendbox.in"><i
+							href=""><i
 								class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>
@@ -293,10 +396,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	</footer>
 
-	<!-- Js File 		  -->
+	</div>
+	</footer>	<!-- Js File-->
 
 
 	<script
@@ -311,7 +413,59 @@
 	<script
 		src=<c:url value="/resources/plugins/slimScroll/jquery.slimscroll.min.js"/>
 		type="text/javascript"></script>
-	<script src=<c:url value="/resources/js/demo.js"/>
+	<script src=<c:url value="/resources	/js/demo.js"/>
 		type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".p2").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p2Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p2.png");
+
+			})
+			$(".p1").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p1Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p1.png");
+
+			})
+			$(".p3").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p3Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p3.png");
+
+			})
+			$(".p4").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p4Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p4.png");
+
+			})
+			$(".p5").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p5Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p5.png");
+
+			})
+			$(".p6").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p6Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p6.png");
+
+			})
+			$(".p7").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p7Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p7.png");
+
+			})
+			$(".p8").hover(function() {
+				$(this).attr('src', "./resources/images/partners/p8Hover.png");
+			}, function() {
+				$(this).attr('src', "./resources/images/partners/p8.png");
+
+			})
+		});
+	</script>
 </body>
 </html>

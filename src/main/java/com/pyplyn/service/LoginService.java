@@ -24,4 +24,6 @@ public interface LoginService {
 	//public InvestorsDetails getInvestorById(int id);
 
 	public String sendSms(String mobile);
+	
+	public String randomNumber();
 }

@@ -28,7 +28,15 @@ public class BorrowerDaoImpl implements BorrowerDao {
 
 	public List<BorrowersDetail> getAllBorrower(String label) {
 		// TODO Auto-generated method stub
-		return null;
+		Session session  = sessionFactory.getCurrentSession();
+		String hql ="";
+		if(label.equals("allBorrowers"))
+		{
+			 hql = "FROM BorrowersDetail";
+		}
+		Query query = session.createQuery(hql);
+		
+		return (List<BorrowersDetail>)query.list();
 	}
 
 	public void deleteBorrower(int id) {

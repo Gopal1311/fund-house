@@ -68,7 +68,7 @@
 										required : true,
 										email : true,
 										remote : {
-											url : "/FoundHouse/isUsernameAvailable",
+											url : "isUsernameAvailable",
 											type : "post",
 											data : {
 												username : function() {
@@ -90,7 +90,7 @@
 										maxlength : 10,
 										digits : true,
 										remote : {
-											url : "/FoundHouse/isNumberAvailable",
+											url : "isNumberAvailable",
 											type : "post",
 											data : {
 												mobile : function() {
@@ -173,16 +173,16 @@
 
 								submitHandler : function(form) {
 									type = $("#userType").val();
-									alert(type);
+									//alert(type);
 									if ($("#userType").val() == "BORROWER") {
 
-										var ajaxUrl = "/FoundHouse/registerUser";
+										var ajaxUrl = "registerUser";
 									} else {
-										var ajaxUrl = "/FoundHouse/registerInvestor";
+										var ajaxUrl = "registerInvestor";
 									}
 									if ($('#c1').is(":checked")
 											&& $('#c3').is(":checked")) {
-										alert($("#signup_form").serialize());
+										//alert($("#signup_form").serialize());
 
 										$
 												.ajax({
@@ -194,8 +194,8 @@
 													success : function(response) {
 														var data = $
 																.parseJSON(response);
-														alert(response);
-														alert(data.roi);
+														//alert(response);
+														//alert(data.roi);
 														if (!response.error) {
 
 															/*
@@ -210,7 +210,7 @@
 															 * "disabled",
 															 * true);
 															 */
-															alert("OK Bye");
+															//alert("OK Bye");
 															if (type == "BORROWER") {
 																window.location = "detailsSteps";
 															}if (type =="INVESTOR") {
@@ -220,7 +220,7 @@
 															
 															
 														} else {
-															alert(response.message);
+															//alert(response.message);
 															/*
 															 * $(
 															 * '#signup-submit-btn')
@@ -237,7 +237,7 @@
 														// var err = eval("(" +
 														// xhr.responseText +
 														// ")");
-														alert(xhr.responseText);
+														//alert(xhr.responseText);
 													}
 												});
 									}
@@ -267,7 +267,7 @@ $(document).ready(
 					'change', function() {
 						
 						$("#signup_form").validate().element($(this));
-						// alert("Changed: " + $(this).attr('id'));
+						// //alert("Changed: " + $(this).attr('id'));
 					});
 			$('#signup-submit-btn').click(function() {
 				$('input[type=text]').each(function() {

@@ -26,11 +26,7 @@ public class InvestorServiceImpl implements InvestorService {
 		return dao.getInvestorById(id);
 	}
 
-	@Transactional
-	public List<InvestorsDetails> getAllInvestor(String label) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	@Transactional
 	public void deleteInvestor(int id) {
@@ -55,6 +51,13 @@ public class InvestorServiceImpl implements InvestorService {
 	public InvestorsDetails getInvestorBy(String label,Login login) {
 		// TODO Auto-generated method stub
 		return dao.getBorrowerBy(label,login);
+	}
+
+	@Transactional
+	public List<InvestorsDetails> getAllInvestor(String label) {
+		// TODO Auto-generated method stub
+		
+		return dao.getIAllnvestor(label);
 	}
 
 	

@@ -110,14 +110,14 @@ public class LoginServiceImpl implements LoginService {
 			String str = myJsonStr.get("status").toString();
 			System.out.println("str==>" + str);
 			System.out.println("otp=>" + otp);
-			// if(myJsonStr.get("status").toString().equalsIgnoreCase("\"success\""))
-			// {
-			// System.err.println("OTP GENERATED===>"+otp);
-			// return otp;
-			// }
-			// return null;
+			if (myJsonStr.get("status").toString()
+					.equalsIgnoreCase("\"success\"")) {
+				System.err.println("OTP GENERATED===>" + otp);
+				return otp;
+			}
+			return null;
 
-			return otp;
+			
 		} catch (Exception e) {
 			System.out.println("Error SMS " + e);
 			return "Error " + e;
@@ -139,9 +139,10 @@ public class LoginServiceImpl implements LoginService {
 	// return dao.getInvestorById(id);
 	// }
 
-	private String randomNumber() {
+	public String randomNumber() {
 		Random random = new Random();
 		String id = String.format("%04d", random.nextInt(10000));
+		System.out.println("id=>"+id);
 		return id;
 	}
 

@@ -28,10 +28,7 @@ public class InvestorDaoImpl implements InvestorDao {
 
 	}
 
-	public List<InvestorsDetails> getInvestor(String label) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	public void deleteInvestor(int id) {
 		// TODO Auto-generated method stub
@@ -61,6 +58,22 @@ public class InvestorDaoImpl implements InvestorDao {
 		query.setParameter("password", login.getPassword());
 		query.setMaxResults(1);
 		return (InvestorsDetails) query.uniqueResult();
+	}
+
+	public List<InvestorsDetails> getIAllnvestor(String label) {
+		// TODO Auto-generated method stub
+		Session session  = sessionFactory.getCurrentSession();
+		String hql="";
+		if(label.equals("allInvestors"))
+		{
+			hql  = "FROM  InvestorsDetails";
+			
+		}
+		Query query = session.createQuery(hql);
+		
+		
+		
+		return (List<InvestorsDetails>) query.list();
 	}
 
 }

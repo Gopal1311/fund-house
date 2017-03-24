@@ -81,7 +81,7 @@ public class LoginController {
 						detail.getBorrowerId());
 
 				if (login2.getStatus() == status.complete) {
-					return new ModelAndView("home/tmpProfile");
+					return new ModelAndView("redirect:profiles1");
 				} else {
 					session.setAttribute("sessionMobile", detail.getMobile());
 					return new ModelAndView("redirect:detailsSteps");
@@ -96,7 +96,7 @@ public class LoginController {
 				session.setAttribute("sessionInvestorId",
 						invDetail.getInvestorId());
 				if (login2.getStatus() == status.complete) {
-					return new ModelAndView("investor/investorProfile");
+					return new ModelAndView("redirect:perfiels2");
 				} else {
 					session.setAttribute("sessionMobile", invDetail.getMobile());
 					return new ModelAndView("investor/stepsWizad");
@@ -302,7 +302,7 @@ public class LoginController {
 			HttpSession session) {
 		System.out.println("sendOtp(POST)-->LoginController-->sendOtp()");
 		System.out.println("Mobile:-" + mobile);
-		String otp = loginService.sendSms(mobile);
+		String otp = loginService.randomNumber() ;//loginService.sendSms(mobile);
 		if (otp != null) {
 			session.setAttribute("sessionOtp", otp);
 			return "success";
