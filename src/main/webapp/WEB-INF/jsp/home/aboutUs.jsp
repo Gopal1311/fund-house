@@ -46,7 +46,7 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="/" class="navbar-brand"><b style="color: orange;">F</b>UNDHOUSE</a>
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
 					<i class="fa fa-bars"></i>
@@ -56,7 +56,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">HOME</a></li>
+					<li><a href="${pageContext.request.contextPath}">HOME</a></li>
 					<li><a href="howItWorks">HOW IT WORKS</a></li>
 					<li><a href="investors">INVESTROS</a></li>
 					<li><a href="borrowers">BORROWERS</a></li>
@@ -129,23 +129,23 @@
 				<h1>Meet the team</h1>
 				<div class="pad col-xs-4">
 					<img class="img-responsive"
-						src="/FoundHouse/resources/images/thirdimg.jpg" />
+						src="/resources/images/thirdimg.jpg" />
 				</div>
 				<div class="pad col-xs-4">
 					<img class="img-responsive"
-						src="/FoundHouse/resources/images/thirdimg.jpg" />
+						src="/resources/images/thirdimg.jpg" />
 				</div>
 				<div class="pad col-xs-4">
 					<img class="img-responsive"
-						src="/FoundHouse/resources/images/thirdimg.jpg" />
+						src="/resources/images/thirdimg.jpg" />
 				</div>
 				<div class="pad col-xs-4">
 					<img class="img-responsive"
-						src="/FoundHouse/resources/images/thirdimg.jpg" />
+						src="/resources/images/thirdimg.jpg" />
 				</div>
 				<div class="pad col-xs-4">
 					<img class="img-responsive"
-						src="/FoundHouse/resources/images/thirdimg.jpg" />
+						src="/resources/images/thirdimg.jpg" />
 				</div>
 				<div class=" col-xs-4">
 					<label type="text" class="form-control"
@@ -196,7 +196,7 @@
 
 
 		<!-- Footer -->
-					<footer class="main-footer"> <!-- ROW 1 -->
+	<footer class="main-footer"> <!-- ROW 1 -->
 
 	<div class="container">
 
@@ -239,7 +239,7 @@
 			<div class="col-xs-12 col-md-2 column">
 				<br>
 			</div>
-			<div class="col-xs-12 col-md-2 col-sm-4 column" >
+			<div class="col-xs-12 col-md-2 col-sm-4 column">
 				<div class="row">
 					<div class="col-sm-12">
 						<h4>Join Newsletter</h4>
@@ -254,9 +254,10 @@
 									</button></span>
 							</div>
 							<br>
-							<div>New Delhi, India<br>
-							Phone number:+91 99933 32222<br>
-							Email: info@fundhouse.co.in</div>
+							<div>
+								New Delhi, India<br> Phone number:+91 99933 32222<br>
+								Email: info@fundhouse.co.in
+							</div>
 						</div>
 					</div>
 				</div>
@@ -273,22 +274,16 @@
 					</div>
 					<div class="text-center">
 						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
-						</div>
+					</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-4 column">
 
 					<ul class="social list-inline" style="text-align: center;">
+						<li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
 						<li><a target="_blank" href=""><i
-								class="fa fa-twitter"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-facebook"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
 								class="fa fa-google-plus"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-instagram"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>
 
@@ -297,7 +292,8 @@
 		</div>
 
 	</div>
-	</footer>	<!-- Js File-->
+	</footer>
+	<!-- Js File-->
 	</div>
 	<!-- Js File 		  -->
 

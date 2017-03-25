@@ -1,5 +1,4 @@
 package com.pyplyn.bean;
-
 import java.io.Serializable;
 
 import javax.persistence.CascadeType;
@@ -14,9 +13,10 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicUpdate;
 
+
 @Entity
 @Table(name = "borrowersDetail")
-@DynamicUpdate
+@DynamicUpdate(value=true)
 public class BorrowersDetail implements Serializable {
 
 	@Id
@@ -49,6 +49,9 @@ public class BorrowersDetail implements Serializable {
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "fientialDetailId")
 	private FientialDetail fientialDetail;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "bankId")
+	private Bank bank;
 
 	public BorrowersDetail() {
 		super();
@@ -60,6 +63,7 @@ public class BorrowersDetail implements Serializable {
 		super();
 		personalDetails = new PersonalDetails();
 		fientialDetail = new FientialDetail();
+		bank = new Bank();
 
 		// TODO Auto-generated constructor stub
 	}
@@ -168,4 +172,14 @@ public class BorrowersDetail implements Serializable {
 		this.fientialDetail = fientialDetail;
 	}
 
+	public Bank getBank() {
+		return bank;
+	}
+
+	public void setBank(Bank bank) {
+		this.bank = bank;
+	}
+
+	
+	
 }

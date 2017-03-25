@@ -7,8 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.DynamicUpdate;
 @Entity
 @Table(name="salaryEmp")
+@DynamicUpdate(value=true)
 public class SalaryEmp implements Serializable {
 
 	@Id

@@ -18,5 +18,7 @@ public interface BorrowerService {
 	public void updateBorrower(BorrowersDetail detail);
 	
 	public BorrowersDetail getBorrowerBy(String label,Login login);
+	
+	
 
 }

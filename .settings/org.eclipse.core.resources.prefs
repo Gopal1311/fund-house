@@ -1,15 +1,9 @@
 eclipse.preferences.version=1
-encoding//src/main/webapp/WEB-INF/jsp/borrower/borrowerProfile.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/borrower/borrowerList.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/borrower/signUpBorrower.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/borrower/stepsWizad.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/home/aboutUs.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/home/blogs.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/home/borrowers.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/home/home.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/home/howItWorks.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/home/investors.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/home/login.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/jsp/investor/investorProfile.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/investor/investorList.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/investor/signUpInvestor.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/investor/stepwizad.jsp=UTF-8
 encoding//src/main/webapp/resources/css/material.indigo-pink.min.css=UTF-8

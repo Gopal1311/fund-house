@@ -38,7 +38,7 @@
 	<div class="wrapper">
 
 		<!-- Nav Bar -->
-		<header class="main-header"> <nav
+			<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
 			<div class="navbar-header">
@@ -47,7 +47,8 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="/" class="navbar-brand"><b style="color: orange;">F</b>UNDHOUSE</a>
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
+					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
 					<i class="fa fa-bars"></i>
@@ -57,13 +58,13 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">HOME</a></li>
+					<li><a href="${pageContext.request.contextPath}">HOME</a></li>
 					<li><a href="howItWorks">HOW IT WORKS</a></li>
 					<li><a href="investors">INVESTORS</a></li>
 					<li><a href="borrowers">BORROWERS</a></li>
 					<li><a href="blogs">BLOGS</a></li>
 					<li><a href="aboutUs">ABOUT US</a></li>
-					<li class="dropdown"><a href="" class="dropdown-toggle"
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
 							<li><a href="signUpInvestor">Investor</a></li>
@@ -376,7 +377,7 @@
 											fundhouse reserves the right of selecting the borrowers
 											suitable for listing on its website. All borrower
 											applications are subject to stringent verification by the
-											fundhouseÃ¢â¬â¢s risk management team and in case an
+											fundhouseâ€™s risk management team and in case an
 											application is not found suitable then fundhouse reserves the
 											right to partially refund the listing fees paid by you and
 											terminate your loan application.</p>
@@ -1029,7 +1030,7 @@
 		<!-- END -->
 	</div>
 	<!-- Footer -->
-				<footer class="main-footer"> <!-- ROW 1 -->
+	<footer class="main-footer"> <!-- ROW 1 -->
 
 	<div class="container">
 
@@ -1072,7 +1073,7 @@
 			<div class="col-xs-12 col-md-2 column">
 				<br>
 			</div>
-			<div class="col-xs-12 col-md-2 col-sm-4 column" >
+			<div class="col-xs-12 col-md-2 col-sm-4 column">
 				<div class="row">
 					<div class="col-sm-12">
 						<h4>Join Newsletter</h4>
@@ -1087,9 +1088,10 @@
 									</button></span>
 							</div>
 							<br>
-							<div>New Delhi, India<br>
-							Phone number:+91 99933 32222<br>
-							Email: info@fundhouse.co.in</div>
+							<div>
+								New Delhi, India<br> Phone number:+91 99933 32222<br>
+								Email: info@fundhouse.co.in
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1105,23 +1107,17 @@
 							Management India Limited</small>
 					</div>
 					<div class="text-center">
-						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
-						</div>
+						<small>Copyright � 2027. All Rights Reserved Fundhouse</small>
+					</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-4 column">
 
 					<ul class="social list-inline" style="text-align: center;">
+						<li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
 						<li><a target="_blank" href=""><i
-								class="fa fa-twitter"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-facebook"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
 								class="fa fa-google-plus"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-instagram"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>
 
@@ -1130,7 +1126,9 @@
 		</div>
 
 	</div>
-	</footer>	<!-- Js File-->
+	</footer>
+	<!-- END -->
+	<!-- Js File 		  -->
 
 
 	<script

@@ -9,12 +9,15 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.DynamicUpdate;
+
 import com.pyplyn.bean.FientialDetail;
 import com.pyplyn.bean.Login;
 import com.pyplyn.bean.PersonalDetails;
 
 @Entity
-@Table(name="inveestorsDetail")
+@Table(name = "inveestorsDetail")
+@DynamicUpdate(value = true)
 public class InvestorsDetails {
 	@Id
 	@GeneratedValue
@@ -37,7 +40,7 @@ public class InvestorsDetails {
 	private String lastName;
 	@Column
 	private String mobile;
-	@OneToOne(cascade=CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "loginId")
 	private Login login;
 	@OneToOne(cascade = CascadeType.ALL)
@@ -47,10 +50,10 @@ public class InvestorsDetails {
 	@JoinColumn(name = "fientialDetailId")
 	private FientialDetail fientialDetail;
 
-	public InvestorsDetails(){
+	public InvestorsDetails() {
 		super();
 		personalDetails = new InvestorPersonalDetail();
-		fientialDetail = new FientialDetail(); 
+		fientialDetail = new FientialDetail();
 
 	}
 
@@ -142,8 +145,6 @@ public class InvestorsDetails {
 		this.login = login;
 	}
 
-	
-
 	public InvestorPersonalDetail getPersonalDetails() {
 		return personalDetails;
 	}
@@ -159,6 +160,5 @@ public class InvestorsDetails {
 	public void setFientialDetail(FientialDetail fientialDetail) {
 		this.fientialDetail = fientialDetail;
 	}
-
 
 }

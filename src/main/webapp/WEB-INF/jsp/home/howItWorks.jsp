@@ -37,7 +37,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
 	<div class="wrapper">
 		<!-- Navi barr -->
-		<header class="main-header"> <nav
+			<header class="main-header"> <nav
 			class="navbar navbar-static-top ">
 		<div class="container">
 			<div class="navbar-header">
@@ -46,7 +46,8 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="/" class="navbar-brand"><b style="color: orange;">F</b>UNDHOUSE</a>
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
+					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
 					<i class="fa fa-bars"></i>
@@ -56,13 +57,13 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse " id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">HOME</a></li>
+					<li><a href="${pageContext.request.contextPath}">HOME</a></li>
 					<li><a href="howItWorks">HOW IT WORKS</a></li>
 					<li><a href="investors">INVESTROS</a></li>
 					<li><a href="borrowers">BORROWERS</a></li>
 					<li><a href="blogs">BLOGS</a></li>
 					<li><a href="aboutUs">ABOUT US</a></li>
-					<li class="dropdown"><a href="" class="dropdown-toggle"
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">SIGN UP <span class="caret"></span></a>
 						<ul class="dropdown-menu " role="menu">
 							<li><a href="signUpInvestor">Investor</a></li>
@@ -107,7 +108,7 @@
 							<p>In this growing global market getting in touch with
 								potential investors and borrowers is challenging and this is
 								where FundHouse comes into play.</p>
-							<p>fundhouse is an online marketplace where potential Investors
+							<p>fundbox is an online marketplace where potential Investors
 								and pre-verified, creditworthy borrowers connect and pursue
 								bilateral transactions. FundHouse helps strike deals amongst the
 								Investors and the borrowers and also help in repayment.</p>
@@ -117,7 +118,7 @@
 								FundHouse. Registration happens after thorough verification as
 								per KYC norms laid by RBI/SEBI for opening bank accounts and
 								online trading accounts, assuring authentic and safe dealings.<a
-									class="contactUsSideSlider" href="">CONTACT US</a> now to get
+									class="contactUsSideSlider" href="#">CONTACT US</a> now to get
 								started.
 							</p>
 							<strong>How transactions strike at FundHouse?</strong>
@@ -138,9 +139,9 @@
 								electronic transfers via NEFT, netbanking, Auto Debits etc.</p>
 							<strong>DISCLAIMER:</strong>
 							<p>
-								fundhouse does not play any role in any of the bilateral
+								fundbox does not play any role in any of the bilateral
 								transactions; we only charge a service fee for our services. To
-								know more <a class="contactUsSideSlider" href="">CONTACT
+								know more <a class="contactUsSideSlider" href="#">CONTACT
 									US.</a>
 							</p>
 						</div>
@@ -153,7 +154,7 @@
 				<div class="col">
 					<div class="box box-bg collapsed-box">
 						<div class="box-header with-border">
-							<h3 class="box-title text-center">WHAT fundhouse DOES?</h3>
+							<h3 class="box-title text-center">WHAT fundbox DOES?</h3>
 
 							<div class="box-tools pull-right">
 								<button type="button" class="btn btn-box-tool"
@@ -172,30 +173,30 @@
 								RBI/SEBI. For the same, we collect Personal, Professional,
 								Social and Financial details from each potential member.</p>
 							<p>Once borrower and investors come to a mutual agreement,
-								fundhouse will help them legalize the transaction by signing a
+								fundbox will help them legalize the transaction by signing a
 								formal contract. We make necessary provisions and help both
 								parties realize the deal without the necessity of a physical
 								meeting.</p>
 							<p>Once a loan is disbursed, we help investors with the
 								collection and recovery of loans as per official guidelines of
 								RBI for banks and financial institutions. Delay in repayment by
-								borrowers draw a penalty that is pursued by fundhouse as part of
+								borrowers draw a penalty that is pursued by fundbox as part of
 								the process.</p>
-							<p>We at fundhouse do not collect money deposits from either
+							<p>We at fundbox do not collect money deposits from either
 								borrowers or investors. All monetary transactions are directly
 								between the two parties.</p>
-							<p>Decisions to lend on fundhouse are entirely at the
+							<p>Decisions to lend on fundbox are entirely at the
 								discretion of potential investors. We do not guarantee fixed or
 								minimum rate of returns to any investor.</p>
-							<p>For further details, please read read fundhouse Term of use
+							<p>For further details, please read read fundbox Term of use
 								and Privacy policy</p>
-							<p>fundhouse does not give any financial advice or
+							<p>fundbox does not give any financial advice or
 								recommendations to either borrowers or investors on this
 								platform. Members are encouraged to make their own researched
 								and informed decisions and transact accordingly, free of any
 								coercion or any form of influence from us.</p>
 							<p>If you have further queries, feel free to email us at
-								support@fundhouse.in</p>
+								support@fundbox.in</p>
 
 
 						</div>
@@ -208,7 +209,7 @@
 				<div class="col">
 					<div class="box box-bg collapsed-box">
 						<div class="box-header with-border">
-							<h3 class="box-title">BIDDING PROCESS OF fundhouse</h3>
+							<h3 class="box-title">BIDDING PROCESS OF fundbox</h3>
 
 							<div class="box-tools pull-right">
 								<button type="button" class="btn btn-box-tool"
@@ -257,13 +258,13 @@
 						<!-- /.box-header -->
 						<div class="box-body body-padding">
 							<
-							<p>fundhouse encourages its user to use auto debits for
+							<p>fundbox encourages its user to use auto debits for
 								repayments. However, fund transfers can also happen through Bank
 								Cheques, IMPS, NEFT and other auto debits.</p>
 							<p>The funds are transferred directly between users. If PDCs
 								are issued for repayment, they are directly issues in the name
 								of the investors.</p>
-							<p>fundhouse also encourages its users to transfer money
+							<p>fundbox also encourages its users to transfer money
 								electronically from leading banks across the country.</p>
 
 						</div>
@@ -274,7 +275,7 @@
 			<!-- End Sections -->
 			<!-- Call Out -->
 			<div class="callout callout-info1 ">
-				<p>In recent times, fundhouse has helped a lot of individuals to
+				<p>In recent times, fundbox has helped a lot of individuals to
 					realize their dreams by serving their capital needs with complete
 					integrity</p>
 			</div>
@@ -284,7 +285,7 @@
 
 
 		<!-- Footer -->
-					<footer class="main-footer"> <!-- ROW 1 -->
+		<footer class="main-footer"> <!-- ROW 1 -->
 
 	<div class="container">
 
@@ -327,7 +328,7 @@
 			<div class="col-xs-12 col-md-2 column">
 				<br>
 			</div>
-			<div class="col-xs-12 col-md-2 col-sm-4 column" >
+			<div class="col-xs-12 col-md-2 col-sm-4 column">
 				<div class="row">
 					<div class="col-sm-12">
 						<h4>Join Newsletter</h4>
@@ -342,9 +343,10 @@
 									</button></span>
 							</div>
 							<br>
-							<div>New Delhi, India<br>
-							Phone number:+91 99933 32222<br>
-							Email: info@fundhouse.co.in</div>
+							<div>
+								New Delhi, India<br> Phone number:+91 99933 32222<br>
+								Email: info@fundhouse.co.in
+							</div>
 						</div>
 					</div>
 				</div>
@@ -360,23 +362,17 @@
 							Management India Limited</small>
 					</div>
 					<div class="text-center">
-						<small>Copyright Â© 2027. All Rights Reserved Fundhouse</small>
-						</div>
+						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
+					</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-4 column">
 
 					<ul class="social list-inline" style="text-align: center;">
+						<li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
 						<li><a target="_blank" href=""><i
-								class="fa fa-twitter"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-facebook"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
 								class="fa fa-google-plus"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-instagram"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>
 
@@ -385,7 +381,9 @@
 		</div>
 
 	</div>
-	</footer>	<!-- Js File-->
+	</footer>
+		<!-- END -->
+
 	</div>
 	<!-- Js File 		  -->
 

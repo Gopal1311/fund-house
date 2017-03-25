@@ -590,7 +590,7 @@ label.error {
 
 
 
-						<footer class="main-footer"> <!-- ROW 1 -->
+		<footer class="main-footer"> <!-- ROW 1 -->
 
 	<div class="container">
 
@@ -633,7 +633,7 @@ label.error {
 			<div class="col-xs-12 col-md-2 column">
 				<br>
 			</div>
-			<div class="col-xs-12 col-md-2 col-sm-4 column" >
+			<div class="col-xs-12 col-md-2 col-sm-4 column">
 				<div class="row">
 					<div class="col-sm-12">
 						<h4>Join Newsletter</h4>
@@ -648,9 +648,10 @@ label.error {
 									</button></span>
 							</div>
 							<br>
-							<div>New Delhi, India<br>
-							Phone number:+91 99933 32222<br>
-							Email: info@fundhouse.co.in</div>
+							<div>
+								New Delhi, India<br> Phone number:+91 99933 32222<br>
+								Email: info@fundhouse.co.in
+							</div>
 						</div>
 					</div>
 				</div>
@@ -667,22 +668,16 @@ label.error {
 					</div>
 					<div class="text-center">
 						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
-						</div>
+					</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-4 column">
 
 					<ul class="social list-inline" style="text-align: center;">
+						<li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
 						<li><a target="_blank" href=""><i
-								class="fa fa-twitter"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-facebook"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
 								class="fa fa-google-plus"></i></a></li>
-						<li><a target="_blank"
-							href=""><i
-								class="fa fa-instagram"></i></a></li>
+						<li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
 						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
 					</ul>
 
@@ -691,7 +686,8 @@ label.error {
 		</div>
 
 	</div>
-	</footer>	<!-- Js File-->
+	</footer>
+	<!-- Js File-->
 		</div>
 
 

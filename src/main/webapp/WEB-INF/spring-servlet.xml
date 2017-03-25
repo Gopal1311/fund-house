@@ -33,13 +33,14 @@
 
 	<!-- css , Js , Bootstrap -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />
-	
+
 	<!-- Basic Data sources -->
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://aa16nt11grvtm10.cmdxo1nywzcq.ap-south-1.rds.amazonaws.com:3306/ebdb" />
+		<property name="url"
+			value="jdbc:mysql://aa16nt11grvtm10.cmdxo1nywzcq.ap-south-1.rds.amazonaws.com:3306/ebdb" />
 		<property name="username" value="admin" />
 		<property name="password" value="admin123" />
 
@@ -59,6 +60,8 @@
 				<value>com.pyplyn.bean.SelfEmp</value>
 				<value>com.pyplyn.bean.investor.InvestorPersonalDetail</value>
 				<value>com.pyplyn.bean.investor.InvestorsDetails</value>
+				<value>com.pyplyn.bean.Bank</value>
+				<value>com.pyplyn.bean.Document</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -69,6 +72,15 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
+	</bean>
+
+
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="10000000" />
 	</bean>
 
 
@@ -96,6 +108,14 @@
 	</bean>
 	<bean id="investorService" class="com.pyplyn.service.InvestorServiceImpl">
 		<property name="dao" ref="investorDao"></property>
+	</bean>
+
+	<!-- Document -->
+	<bean id="documentDao" class="com.pyplyn.dao.DocumentDaoImpl">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	<bean id="documentService" class="com.pyplyn.service.DocumentServiceImpl">
+		<property name="dao" ref="documentDao"></property>
 	</bean>
 
 

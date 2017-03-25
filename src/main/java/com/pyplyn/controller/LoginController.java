@@ -96,7 +96,7 @@ public class LoginController {
 				session.setAttribute("sessionInvestorId",
 						invDetail.getInvestorId());
 				if (login2.getStatus() == status.complete) {
-					return new ModelAndView("redirect:perfiels2");
+					return new ModelAndView("redirect:profiels2");
 				} else {
 					session.setAttribute("sessionMobile", invDetail.getMobile());
 					return new ModelAndView("investor/stepsWizad");
@@ -212,6 +212,7 @@ public class LoginController {
 			}
 			detail2.setPersonalDetails(detail.getPersonalDetails());
 			detail2.setFientialDetail(detail.getFientialDetail());
+			detail2.setBank(null);
 			detail2.getLogin().setStatus(status.complete);
 			borrowerService.updateBorrower(detail2);
 			return new Gson().toJson(detail);

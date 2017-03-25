@@ -16,7 +16,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 @Entity
 @Table(name="borrowerFientialDetail")
-@DynamicUpdate
+@DynamicUpdate(value=true)
 public class FientialDetail implements Serializable{
 
 	@Id
