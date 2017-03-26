@@ -32,6 +32,30 @@
 	rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Fund House</title>
+<style type="text/css">
+.size1 {
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-top-width: 0px;
+	background-color: #001528;
+	color: #ffa513;
+	box-shadow: 0 4px 4px rgb(255, 165, 19);
+}
+
+.size {
+	padding-bottom: 10px;
+	padding-top: 02px;
+	padding-left: 0px;
+}
+
+.box1 {
+	border-top-width: 0px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+box-shadow: 0 4px 4px rgb(255, 165, 19);
+}
+</style>
+
 </head>
 <!--  -->
 <body class="hold-transition skin-blue layout-top-nav">
@@ -46,7 +70,8 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse"></button> 
 				</img>-->
-				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b style="color: orange;">F</b>UNDHOUSE</a>
+				<a href="${pageContext.request.contextPath}" class="navbar-brand"><b
+					style="color: orange;">F</b>UNDHOUSE</a>
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar-collapse">
 					<i class="fa fa-bars"></i>
@@ -86,7 +111,7 @@
 
 
 		<div class="title container text-center">Our story,our value</div>
-		<div class="setion-how-it-works-inner container">
+		<div class="setion-how-it-works-inner container" style="margin-bottom: 0px;">
 			<div class="row">
 				<!-- Section 1 -->
 				<div class="col">
@@ -128,24 +153,19 @@
 			<center>
 				<h1>Meet the team</h1>
 				<div class="pad col-xs-4">
-					<img class="img-responsive"
-						src="/resources/images/thirdimg.jpg" />
+					<img class="img-responsive" src="/resources/images/175605.jpg" />
 				</div>
 				<div class="pad col-xs-4">
-					<img class="img-responsive"
-						src="/resources/images/thirdimg.jpg" />
+					<img class="img-responsive" src="/resources/images/175605.jpg" />
 				</div>
 				<div class="pad col-xs-4">
-					<img class="img-responsive"
-						src="/resources/images/thirdimg.jpg" />
+					<img class="img-responsive" src="/resources/images/175605.jpg" />
 				</div>
 				<div class="pad col-xs-4">
-					<img class="img-responsive"
-						src="/resources/images/thirdimg.jpg" />
+					<img class="img-responsive" src="/resources/images/175605.jpg" />
 				</div>
 				<div class="pad col-xs-4">
-					<img class="img-responsive"
-						src="/resources/images/thirdimg.jpg" />
+					<img class="img-responsive" src="/resources/images/175605.jpg" />
 				</div>
 				<div class=" col-xs-4">
 					<label type="text" class="form-control"
@@ -157,36 +177,29 @@
 						feedback. Let us know what you think or if you have any questions.
 					</h3>
 					<div class="row">
-						<table>
-							<tr>
-								<td><button type="button" class="btn btn-info">
-										<i class="fa fa-envelope-o"></i>
-									</button></td>
-								<td><a href="mailto:support@fundhouse.in">support@fundhouse.in</a></td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-info">
-										<i class="fa fa-twitter"></i>
-									</button></td>
-								<td><a href="https://twitter.com/fundhousein"
-									target="_blank">@fundhousein</a></td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-info">
-										<i class="fa fa-phone"></i>
-									</button></td>
-								<td><a href="tel:01126254235">011-26254235</a></td>
-							</tr>
-							<!-- <li><i class="fa fa-whatsapp"></i><a href="tel:9811534578">9811534578</a></li> -->
-							<tr>
-								<td><button type="button" class="btn btn-info">
-										<i class="fa fa fa-map-marker" style="color: red;"></i>
-									</button></td>
-								<td>fundhouse HQ <br>South Extension II <br> New
-									Delhi<br>India
-								</td>
-							</tr>
-						</table>
+						<div class="col-sm-4"></div>
+						<div class="col-sm-1">
+							<div class="size1 box box-default">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="size1 box box-default">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div class="size1 box box-default">
+								<i class="fa fa-phone"></i>
+							</div>
+							<div class="size1 box box-default">
+								<i class="fa fa-map-marker"></i>
+							</div>
+
+						</div>
+						<div class="size col-sm-3">
+							<div class="box1 box box-default">info@fundhouse.co.in</div>
+							<div class="box1 box box-default">@fundhouse.in</div>
+							<div class="box1 box box-default">+91 99933 32222</div>
+							<div class="box1 box box-default">New Delhi, India</div>
+						</div>
+						<div class="col-sm-4"></div>
 					</div>
 
 				</div>
@@ -196,104 +209,105 @@
 
 
 		<!-- Footer -->
-	<footer class="main-footer"> <!-- ROW 1 -->
+		<footer class="main-footer"> <!-- ROW 1 -->
 
-	<div class="container">
+		<div class="container">
 
-		<div class="row">
-			<div class="col-xs-6 col-sm-6 col-md-2 column">
-				<h4>Information</h4>
-				<ul class="nav">
-					<li><a href="">Products</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Benefits</a></li>
-					<li><a href="">Developers</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-6 col-md-2 column">
-				<h4>Follow Us</h4>
-				<ul class="nav">
-					<li><a href="">Twitter</a></li>
-					<li><a href="">Facebook</a></li>
-					<li><a href="">Google+</a></li>
-					<li><a href="">Pinterest</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-6 col-md-2 column">
-				<h4>Contact Us</h4>
-				<ul class="nav">
-					<li><a href="">Email</a></li>
-					<li><a href="">Headquarters</a></li>
-					<li><a href="">Management</a></li>
-					<li><a href="">Support</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-6 col-md-2 column">
-				<h4>Useful Links</h4>
-				<ul class="nav">
-					<li><a href="aboutUs">About Us</a></li>
-					<li><a href="howItWorks">How it works</a></li>
-					<li><a href="blogs">Blogs</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-2 column">
-				<br>
-			</div>
-			<div class="col-xs-12 col-md-2 col-sm-4 column">
-				<div class="row">
-					<div class="col-sm-12">
-						<h4>Join Newsletter</h4>
-					</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-2 column">
+					<h4>Information</h4>
+					<ul class="nav">
+						<li><a href="">Products</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Benefits</a></li>
+						<li><a href="">Developers</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 column">
+					<h4>Follow Us</h4>
+					<ul class="nav">
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Google+</a></li>
+						<li><a href="">Pinterest</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 column">
+					<h4>Contact Us</h4>
+					<ul class="nav">
+						<li><a href="">Email</a></li>
+						<li><a href="">Headquarters</a></li>
+						<li><a href="">Management</a></li>
+						<li><a href="">Support</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 column">
+					<h4>Useful Links</h4>
+					<ul class="nav">
+						<li><a href="aboutUs">About Us</a></li>
+						<li><a href="howItWorks">How it works</a></li>
+						<li><a href="blogs">Blogs</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-2 column">
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-2 col-sm-4 column">
 					<div class="row">
-						<div class="col-sm-12 col-xs-6">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Email"><span
-									class="input-group-btn"><button
-										class="btn btn-success-green">
-										<span class="fa fa-send-o"></span>
-									</button></span>
-							</div>
-							<br>
-							<div>
-								New Delhi, India<br> Phone number:+91 99933 32222<br>
-								Email: info@fundhouse.co.in
+						<div class="col-sm-12">
+							<h4>Join Newsletter</h4>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-xs-6">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Email"><span
+										class="input-group-btn"><button
+											class="btn btn-success-green">
+											<span class="fa fa-send-o"></span>
+										</button></span>
+								</div>
+								<br>
+								<div>
+									New Delhi, India<br> Phone number:+91 99933 32222<br>
+									Email: info@fundhouse.co.in
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="footer-botom container">
-			<div class="row">
-
-				<div class="col-lg-10 col-md-8  col-sm-8  column">
-					<div class="text-center">
-						<small>Fundhouse a Trade Name of Truealliance Consultancy
-							Management India Limited</small>
-					</div>
-					<div class="text-center">
-						<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-4 column">
-
-					<ul class="social list-inline" style="text-align: center;">
-						<li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
-						<li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
-						<li><a target="_blank" href=""><i
-								class="fa fa-google-plus"></i></a></li>
-						<li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
-						<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
-					</ul>
 
 				</div>
 			</div>
-		</div>
+			<div class="footer-botom container">
+				<div class="row">
 
-	</div>
-	</footer>
-	<!-- Js File-->
+					<div class="col-lg-10 col-md-8  col-sm-8  column">
+						<div class="text-center">
+							<small>Fundhouse a Trade Name of Truealliance Consultancy
+								Management India Limited</small>
+						</div>
+						<div class="text-center">
+							<small>Copyright © 2027. All Rights Reserved Fundhouse</small>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-4 column">
+
+						<ul class="social list-inline" style="text-align: center;">
+							<li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a target="_blank" href=""><i
+									class="fa fa-google-plus"></i></a></li>
+							<li><a target="_blank" href=""><i
+									class="fa fa-instagram"></i></a></li>
+							<!-- <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li> -->
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</footer>
+		<!-- Js File-->
 	</div>
 	<!-- Js File 		  -->
 
